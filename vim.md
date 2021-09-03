@@ -1,72 +1,32 @@
-# Vimの操作（忘れそうなやつ）
+# About Vim
 
-Aで行末で挿入モード
+- [vi](https://ja.wikipedia.org/wiki/Vi) から派生し、発展した高機能な[テキストエディタ](https://ja.wikipedia.org/wiki/テキストエディタ)
+- 開発者はオランダ人のプログラマーBram Moolenaar
 
-## 移動コマンド
+## Feature
 
-gt タブ移動
+- 軽い
 
-## 削除コマンド
+## nvim
 
-d　数値　モーション
+- 拡張性と使いやすさのために刷新したVim派生テキストエディタ
 
-dwで次の単語まで削除
+## Plugins
 
-d$で行末まで削除
+- preservim/nerdtree
 
-## やり直しコマンド
+> repo = https://github.com/preservim/nerdtree
+>
+> ディレクトリツリー。`m`を押すことでファイル操作が可能
 
-u 直前の変更を取り消し
+```toml
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+hook_add = '''
+  let NERDTreeShowHidden=1
+    nnoremap <silent><C-a> :NERDTreeFind<CR>:vertical res 30<CR>
+'''
+```
 
-U　行の変更を取り消し
+> [vim-plugin NERDTree で開発効率をアップする！](https://qiita.com/zwirky/items/0209579a635b4f9c95ee)
 
-C-r　取り消しを取り消し
-
-r　置き換え
-
-R　単語置き換え
-
-cw　単語変更、挿入
-
-C-g　ステータス確認
-
-## 検索
-
-/search_word　search_wordに移動
-
-n　で次の候補に移動できる。
-
-?search_word　/とは逆に検索
-
-C-o　移動の取り消し
-
-C-i　移動の取り消しの取り消し
-
-%　括弧で入力し、その対応する括弧に移動
-
-## 複数置き換え
-
-:#,#s/old/new/g　#~#の間で置き換え
-
-:%s/old/new/g　ファイル全体で置き換え
-
-:%s/old/new/gc　確認をとりながら置き換え
-
-## コマンドモード
-
-:! cmd　でコマンド実行
-
-1. ヴィジュアルモードで範囲を指定
-2. :w FILENAME　すると指定した範囲をFULENAMEに書き込んで保存
-
-:r FILENAME　でファイルの内容を埋め込み
-
-:tabe FILENAME で新しいファイルをtabで表示
-
-## オプションの設定
-
-:set ic　(ignore case)大文字小文字を区別しない
-
-:set hls 　(hlsearch)色を付ける
-
-解除するには、noic, nohlsearch(先頭にnoをつける)

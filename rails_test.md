@@ -37,6 +37,9 @@
 
     `echo "/spring/*.pid" >> .gitignore`
 
-  - `bundle exec guard`で使える。
+  - `bundle exec guard`で使える
 
-    
+
+
+
+

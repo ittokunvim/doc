@@ -1,0 +1,28 @@
+# configure package.json
+
+```json
+"//": "The url to the project homepage.", 
+"homepage": "https://github.com/owner/project#readme", 
+
+"//": "問題が起きたときにメッセージを送る先", 
+{
+  "url" : "https://github.com/owner/project/issues",
+  "email" : "project@hostname.com"
+}, 
+
+{
+  "license" : "BSD-3-Clause"
+}, 
+
+"//", "authorは一人、contributorは複数",
+{
+  "author": "Barney Rubble <b@rubble.com> (http://barnyrubble.tumblr.com/)"
+},
+
+"//", "誤って公開されるのを防ぐ", 
+"private": true, 
+
+"//", "entry point, defaultはindex.html"
+"main": "index.html"
+```
+

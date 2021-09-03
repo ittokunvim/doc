@@ -8,7 +8,7 @@
 
   > heroku
 
-- lass
+- lass(Instructure as a Service)
 
   > AWS
 
