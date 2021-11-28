@@ -31,3 +31,17 @@
 > 特定のディレクトリを無視
 
 `tree -I node_modules`
+
+### svn
+
+> github.comのソースコードを一部だけクローン
+>
+> URLの`tree/master`の部分を`trunk`に置き換えること
+
+`svn checkout https://github.com/XXX/YYY/trunk/ZZZ`
+
+### nバイトのファイルを生成
+
+> bs x cバイトのfilenameを生成する
+
+`dd if=/dev/zero of=filename bs=n count=c`
