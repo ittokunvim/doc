@@ -310,7 +310,128 @@ def GenerateUserReport():
   # このユーザのロックを解放する
 ```
 
+## Chapter6 コメントは正確で簡潔に
 
+- コメントは領域に対する情報の比率が高くなければいけない。
 
+### コメントを簡潔にしておく
 
+```c++
+// x
+// int is CategoryType
+// first float of pair is score
+// second is weight
+typedef hash_map<int, pair<float, float> > ScoreMap;
+
+// o
+// CategoryType -> (score, weight)
+typedef hash_map<int, pair<float, float> > ScoreMap;
+```
+
+### 曖昧な代名詞を避ける
+
+```javascript
+// x (「this」や「its」という表現はしない方が良い
+// Put into the cache. But check its size first
+
+// o (データをキャッシュに入れる前にデータのサイズをチェックする)
+// Put into the cache. But check data size first
+// if the data is small enough, put into the cache
+```
+
+### 歯切れの悪い文章を磨く
+
+```javascript
+// x (「どうか(based on whether)」と「変える(change)」の表現がわかりにくい)
+// Change the priority based on whether the URL has been crawed before or not (based on whether: 〜かに基づいて)
+
+// o　（クロールしたURLの優先度は低く、していないURLの優先度は高い）
+// Give higher priority to URLs that have not been crawed before
+```
+
+### 関数の動作を正確に記述する
+
+```c++
+// x (行にもさまざまな種類がありどれを指すか怪しい)
+// return number of lines contained in this file
+int CountLines(string filename) { ... }
+
+// o 
+// このファイルに含まれる改行文字(\n)を返す
+// return the newline characters '\n' contained in this file
+int CountLines(string filename) { ... }
+```
+
+### 入出力のコーナーケースに実例を使う
+
+```c++
+// x (説明が長く、理解しにくい)
+
+// Remove 'chars' from the begining and end of 'src'
+String Strip(String src, String chars) { ... }
+
+// Replace 'v' so that "elem < pivot" comes before "elem >= pivot"
+// Then return the larghest 'i' that results in "v[i] < pivot" (or -1 if none)
+int Partition(vector<int>* v, int pivot);
+
+// o (例を示すことによって、文章を書くよりわかりやすい)
+
+// example: Strip("abba/a/ba", "ab") -> return "/a/"
+String Strip(String src, String chars) { ... }
+
+// example: Partition([8 5 9 8 2], 8) result: [5 2 | 8 9 8] return: 1
+int Partition(vector<int>* v, int pivot);
+```
+
+### コードの意図を書く
+
+```c++
+void DisplayProducts(list<Product> products) {
+  products.sort(CompareProductByPrice);
+  
+  // x (わざわざ書いても仕方ないコメント(それとproductsはすでに逆順にソートされていて、このコメントは間違っている！))
+  // Iterate through the list in reverse order
+  for (list<Product>::reverse_iterator it = products.rbegin(); it != products.rend(); ++it) {
+    DisplayPrice(it->price);
+  }
+  
+  // o (プログラムの動作を高レベルから説明している)
+  // Display in order of increasting price
+  for ( ... ) {
+    ...
+  }
+}
+```
+
+### 名前付き引数コメント
+
+```java
+// python: named argument comment
+// def Connect(timeout, use_encryption): ...
+// Connect(timeout = 10, use_encription = False)
+
+// Java: named argument comment
+void Connect(int timeout, bool use_encryption) { ... }
+Connect(/* timeout = */ 10, /* use_encryption = */ false);
+```
+
+### 情報密度の高い言葉を使う
+
+```java
+/* このクラスには大量のメンバがある。同じ情報はデータベースに保存されている、ただし、
+ * 速度の面からここにも保管しておく。このクラスを読み込むときは、メンバが存在しているかどうかを
+ * 先に確認する。もし存在していれば、そのまま返す。存在しなければ、データベースから読み込んで
+ * 次回のためにデータをフィールドに保管する
+ */
+ 
+ // このクラスの役割は、データベースのキャッシュ層である
+```
+
+### まとめ
+- 複数のものを指す可能性がある「それ」や「これ」などの代名詞を避ける。
+- 関数の動作はできるだけ正確に説明する
+- コメントに含める入出力の実例を慎重に選ぶ
+- コードの意図は、詳細レベルでなく、高レベルで記述する
+- よくわからない引数にはインラインコメントを使う
+- 多くの意味がつめられた言葉や表現を使って、コメントを簡潔に保つ。
 
