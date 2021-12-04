@@ -1,14 +1,18 @@
 # Markdown記法
 
-## 文字が
+reference
 
-### だんだんと
+- https://qiita.com/Qiita/items/c686397e4a0f4f11683d
 
-#### 小さく
+## h2 文字が
 
-##### なって
+### h3 だんだんと
 
-###### ゆくよ
+#### h4 小さく
+
+##### h5 なって
+
+###### h6 ゆくよ
 
 
 - リスト1
@@ -17,63 +21,41 @@
 
     - リスト3
 
-
-
 1. 番号リスト1
    1. 番号リスト1-1
    2. 番号リスト1-2
 2. 番号リスト2
 
-
-
 > これは引用です
 >
-> 失礼しますた。
->
-> > ついでに二重引用しまっそ。
+> > 二重引用もできます
 
-
-
-これはpre記法というらしい。
+水平線（---）
 
 ---
 
-使うかどうかはわからないが...
+_italic_ 
 
+__bold__ 
 
+___italic and bold___
 
-コードは`こうだ！`
+[google.com](https://www.google.com)
 
-
-
-normal _italic_ normal 
-
-normal __bold__ normal 
-
-normal ___saikyo___ normal
-
-
-
-[google先生](https://www.google.com)
-
-変数みたいにもできる
-
-[yahoo][yahoo]
-
-[やほー][yahoo]
+URLを変数にする
 
 [yahoo]: https://yahoo.co.jp
 
+[yahoo][yahoo]
 
 
 ~~この発言は取り消しておこう....~~
 
-```ruby:PATH/TO/FILE
+```ruby
 Puts "やっはろー"
 ```
-
-
 
 | テーブル |     例      | 使用例 |
 | :------: | :---------: | :----: |
 | リスト1  | リスト1内容 |  Hoge  |
+

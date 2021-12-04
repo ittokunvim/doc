@@ -1,3 +1,9 @@
+# Editor Config
+
+reference
+
+- https://editorconfig.org/
+
 ```
 root = true
 
@@ -9,8 +15,6 @@ indent_size = 4
 indent_style = space
 trim_trailing_whitespace = true
 ```
-
-
 
 ## ファイルパターン
 
