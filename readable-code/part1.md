@@ -31,6 +31,7 @@ if (node != NULL) Print(node->data);
 #### 小さなことは絶対にいいこと？
 
 - コードは短くした方が良い、だけど「理解するまでのじかん」が短い方がもっと良い
+
 #### 「理解するまでにかかる時間」は競合する？
 
 - 「このコードは理解しやすいだろうか」と自問自答することは大切
@@ -62,9 +63,7 @@ function FetchPage(url) {}
 send =  ['deliver','dispatch','announce','distribute','route'];
 find = ['search', 'extract', 'locate', 'recover'];
 start = ['launch', 'create', 'begin', 'open'];
-make = ['create', 'set up', 'build', 'generate', 'compose', 'add', 'new'];
-
-                         
+make = ['create', 'set up', 'build', 'generate', 'compose', 'add', 'new'];                         
 ```
 
 #### tmpやretvalなどの汎用的な名前を避ける
@@ -341,7 +340,6 @@ def suggest_new_friends(user, email_password):
   display['suggested_friends'] = suggested_friends
   
   return render('suggested_friends.html', display)
-  
 ```
 
 ### Chapter 5 コメントすべきことを知る

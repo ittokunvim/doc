@@ -102,3 +102,7 @@
 > file_nameを変更してもを無視
 
 `git update-index --assume-unchanged file_name`
+
+> 直前のコミットした変更点を見る
+
+`git diff HEAD^`

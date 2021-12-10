@@ -383,3 +383,62 @@ var remove_one = function(array, value_to_remove) {
 
 #### 変数のスコープを縮める
 
+```c++
+// x
+PaymentInfo* info = database.ReadPaymentInfo();
+if (info) {
+  cout << "User paid: " << info->amount() << endl;
+}
+
+// o (スコープを縮めることに成功)
+if (PaymentInfo* info = database.ReadPaymentInfo()) {
+  cout << "User paid: " << info->amount() << endl;
+}
+```
+
+#### 変数は一度だけ書き込む
+
+- 変数を操作する場所が増えると、現在地の判断が難しくなる
+
+#### 最後の例
+
+```javascript
+// x (変数が三つ定義されている、バラバラに見える)
+var setFirstEmptyInput = function(new_value) {
+  var found = false;
+  var i = 1;
+  var elem = document.getElementById('input' + i);
+  
+  while (elem != NULL) {
+    if (elem.value === '') {
+      found = true;
+      break;
+    }
+    i++;
+    elem = document.getElementById('input' + i);
+  }
+  if (found) elem.value = new_value;
+  return elem;
+}
+
+// o (変数が１つしか定義されていない、まとまって見える)
+var setFirstEmptyInput = function(new_value) {
+  for (var i=1; true; i++) {
+    var elem = document.getElementById('input' + i);
+
+    if (elem === null)
+      return null; // search failed, not found empty input
+
+    if (elem.value === '') {
+      elem.value = new_value;
+      return elem;
+    }
+  }
+};
+```
+
+#### まとめ
+
+- 邪魔な変数を削除する
+- 変数のスコープをできるだけ小さくする
+- 一度だけ書き込む変数を使う
