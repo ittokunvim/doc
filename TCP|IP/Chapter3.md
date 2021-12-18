@@ -121,3 +121,84 @@
 - VLANを導入することによって、配線の変更を行うことなく、ネットワークセグメントを変更できるが、管理が難しい
 
 ![VLAN](https://raw.githubusercontent.com/shinzanmono/Markdown/68ee56a05f9430a4d0efaebdf923679379c2f499/images/VLAN.drawio.svg)
+
+### イーサネット（Ethernet）
+
+- データリンクで、現在最も普及しているのがイーサネット。イーサネットの語源はEther(エーテル)から来ており、媒体という意味。
+- 他のデータリンクと比べて制御の仕組みが単純なためNICやデバイスドライバが作りやすい
+- 100Mbps, 1Gbps, 10Gbps, さらには40Gbps/100Gbpsと高速ネットワークの対応が進み、現在では最も互換性と将来性を備えたデータリンクと言える
+- 元々はアメリカのXerox社と旧DEC社が考案した通信方式
+
+#### イーサネットの接続形態
+
+**かつてのイーサネットネットワーク**
+
+![かつてのイーサネットネットワーク](https://raw.githubusercontent.com/shinzanmono/Markdown/d78bc0ebdfc1f3aae4bcff3888e67c1d67b87cf2/images/ethernet-network-1.drawio.svg)
+
+**現在のイーサネットネットワーク**
+
+![現在のイーサネットネットワーク](https://raw.githubusercontent.com/shinzanmono/Markdown/d78bc0ebdfc1f3aae4bcff3888e67c1d67b87cf2/images/ethernet-network-2.drawio.svg)
+
+#### イーサネットにはいろいろな種類がある
+
+- イーサネットには通信ケーブルや通信速度の違う数多くの仕様がある。
+- 10BASEの「10」1000BASEの「1000」10GBASEの「10G」はそれぞれ伝送速度を意味している。その後ろにつく「5」「2」「T」「F」などの文字は媒体の違いを示している
+
+| イーサネットの種類 | ケーブルの最大長     | ケーブルの種類                              |
+| ------------------ | -------------------- | ------------------------------------------- |
+| 10BASE2            | 185m (max node: 30)  | 同軸ケーブル                                |
+| 10BASE5            | 500m (max node: 100) | 同軸ケーブル                                |
+| 10BASE-T           | 100m                 | ツイストペアケーブル（UTPカテゴリ3~5）      |
+| 10BASE-F           | 1000m                | 光ファイバーケーブル（MMF）                 |
+| 100BASE-TX         | 100m                 | ツイストペアケーブル（UTPカテゴリ5/STP）    |
+| 100BASE-FX         | 412m                 | 光ファイバーケーブル（MMF）                 |
+| 100BASE-T4         | 100m                 | ツイストペアケーブル（UTPカテゴリ3~5）      |
+| 1000BASE-CX        | 25m                  | シールドされた銅線                          |
+| 1000BASE-SX        | 220m/550m            | 光ファイバーケーブル（MMF）                 |
+| 1000BASE-LX        | 550m/5000m           | 光ファイバーケーブル（MMF/SMF）             |
+| 1000BASE-T         | 100m                 | ツイストペアケーブル（UTPカテゴリ5/5e推奨） |
+| 10GBASE-SR         | 26m~300m             | 光ファイバーケーブル（MMF）                 |
+| 10GBASE-LR         | 1000m~2500m          | 光ファイバーケーブル（SMF）                 |
+| 10GBASE-ER         | 3000m/4000m          | 光ファイバーケーブル（SMF）                 |
+| 10GBASE-T          | 100m                 | ツイストペアケーブル（UTP/FTPカテゴリ6a）   |
+
+**伝送速度とコンピュータの内部表現の相違**
+
+- コンピュータ
+  - 1K = 1024
+  - 1M = 1024K
+  - 1G = 1024G
+- イーサネット
+  - 1K = 1000
+  - 1M = 1000K
+  - 1G = 1000M
+
+#### イーサネットの歴史
+
+- 最初は同軸ケーブルを使うバス型接続の10BASE5が規格された。それから、10BASE2(thin Ethernet), 10BASE-T(Twist pear Ethernet), 100BASE-TX(fast Ethernet), 1000BASE-T, 10GBASE-Tと規格が追加されていった
+- 当初のイーサネットは、アクセス制御方式としてCSMA/CDが採用されており、半二重通信が前提とされていた。インターネットの高速化するにはCSMA/CDのイーサネットでは厳しいとされていた
+- しかし、ATMのスイッチ技術の進歩と、カテゴリ5のUTPの普及により、衝突検知が必要なくなり、高速化への障壁も無くなった
+
+#### イーサネットのフレームフォーマット
+
+- イーサネットフレームの先頭にはプリアンブルというフィールドがつけられており、イーサネットフレームの始まりを示し、相手のNICがフレームとの同期を取れるようにする
+
+- プリアンブルは、末尾が11のSFD（Start Frame Delimiter）フィールドで終わり、それ以降がイーサネットフレームの本体となる。プリアンブルとSFDは合わせて8オクテットある
+
+- ビット、バイト、オクテットの関係
+  - ビットは、２進数表示を行った時の最小単位
+  - バイトは、8ビットが1バイト
+  - オクテットは、8ビットが１オクテット
+
+  ![イーサネットフレーム](https://raw.githubusercontent.com/shinzanmono/Markdown/a8f7211a35b97758cf7aa5b95fea1c19d3bddaa3/images/ethernet-frame.drawio.svg)
+
+- タイプにはデータ部で運んでいるプロトコルを表す番号が格納されている
+  - https://www.vwnet.jp/Windows/Other/Ethertype.html
+
+**データリンク層は2つの階層に分けられる**
+
+- データリンク層を細かく分けると、媒体アクセス制御（MAC）と、論理リンク制御（LLC(Logic Link Control)）の2つの層に分けられる
+- 媒体アクセス制御とは、イーサネットやFDDIなどのデータリンクごとに決まっているヘッダ制御のこと
+- 論理リンク制御とは、例えばタイプの値が05DCの時にIEEE802.3 Ethernetでは長さを表すタイプです。しかし、長さはわかっても上位層のプロトコルがわからない。そこでLLC\SNAPヘッダで上位層のプロトコルがわかるようになる
+
+![LLC/SNAPフォーマット](https://raw.githubusercontent.com/shinzanmono/Markdown/863f576d704fa6df36099f1bc347d4c321da63c2/images/LLC_SNAP.drawio.svg)
