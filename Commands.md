@@ -46,7 +46,7 @@
 
 `dd if=/dev/zero of=filename bs=n count=c`
 
-### Curlコマンド
+### Curl
 
 > 進捗状況やエラーを表示しない
 
@@ -106,3 +106,15 @@
 > 直前のコミットした変更点を見る
 
 `git diff HEAD^`
+
+> 直前のpushを取り消し（ログは残る）
+
+`git revert [<commit>]`
+
+### lsof
+
+- オープンしているファイルを一覧表示する
+
+> ポート番号3000のプロセスを探す
+
+`lsof -P -i:3000`

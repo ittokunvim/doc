@@ -202,3 +202,63 @@
 - 論理リンク制御とは、例えばタイプの値が05DCの時にIEEE802.3 Ethernetでは長さを表すタイプです。しかし、長さはわかっても上位層のプロトコルがわからない。そこでLLC\SNAPヘッダで上位層のプロトコルがわかるようになる
 
 ![LLC/SNAPフォーマット](https://raw.githubusercontent.com/shinzanmono/Markdown/863f576d704fa6df36099f1bc347d4c321da63c2/images/LLC_SNAP.drawio.svg)
+
+### 無線通信
+
+- 無線通信では、電波や赤外線、レーザー光線などを利用する。オフィス内のようなLANの範囲を比較的高速で接続するものを無線LANという
+
+#### 無線通信の種類
+
+| 分類                                 | 通信距離    | 規格化団体                      | 関連団体や技術名称      |
+| ------------------------------------ | ----------- | ------------------------------- | ----------------------- |
+| 短距離無線                           | 数m         | 個別                            | RF-ID                   |
+| 無線PAN（Personal Area Network）     | 10m前後     | IEEE802.15                      | Bluetooth               |
+| 無線LAN（Local Area Network）        | 100m前後    | IEEE802.11                      | Wi-Fi                   |
+| 無線MAN（Metropolitan Area Network） | 数km~100km  | IEEE802.16,<br />IEEE802.20     | WiMAX                   |
+| 無線RAN（Regional Area Network）     | 200km~700km | IEEE802.22                      | -                       |
+| 無線WAN（Wide Area Network）         | -           | GSM,<br />CDMA2000,<br />W-CDMA | 3G, LTE, 4G, 次世代携帯 |
+
+#### IEEE802.11
+
+- 無線LANプロトコルの物理層とデータリンク層の一部（MAC層）を定義した規格
+- MAC層ではイーサネットと同じMACアドレスが利用され、CSMA/CDとよく似たCSMA/CAというアクセス制御方式を採用している
+
+![無線LAN](https://raw.githubusercontent.com/shinzanmono/Markdown/aedd694457e321e1fb58abc61d31bcb352d5d1d6/images/wireless-LAN.drawio.svg)
+
+#### IEEE802.11b, IEEE802.11g
+
+- 2.4GHz帯の電波を利用する無線LAN。伝送速度は最大11Mbpsおよび54Mbpsで距離30~50m。アクセス制御方式にCSMA/CAを採用
+
+#### IEEE802.11a
+
+- 5GHz帯の周波数を利用。最大54Mbps。IEEE802.11b/gとは互換性なし
+
+#### IEEE802.11n
+
+- MIMO（Multiple-input Multiple-Output）という技術を採用し高速化に成功。2.4GHz, 5GHz帯を使用。最大150Mbpsの伝送速度
+
+**Wi-Fi**
+
+- 無線LANの業界団体であるWECA（Wireless Ethernet Compatibility Alliance）によって、IEEE802.11規格群の普及を目的としてつけられたブランド名
+- オーディオのHi-Fi（High Fidelity：高忠実度・高再現度）のように、Wi-fi（Wireless Fidelity）はも同様に高品質の無線LANを目指している
+
+#### 無線LANを使用する場合の留意点
+
+- 無線LANは、利用者の移動性、機器配置の自由性を確保するために、電波の性質を利用して広い範囲で利用できるようになっている。それは通信可能範囲内であれば許された利用者以外でもこの電波を受信できることを意味する
+- そのため、頭頂や改ざんを防御するために送受信されるデータの暗号化が定められている。しかし一部の規格については、暗号を解読するツールが配布されていたり、その脆弱性が問題となっている
+
+#### Bluetooth
+
+- Bluetoothは2.4GHz帯の電波を使って通信する規格。伝送速度はVersion2で3Mbps（実際の最大スループットは2.1Mbps）。通信可能距離は電波強度によって最大1m, 10, 100mの3種類がある。最大接続数は8台。
+- 対象機器は、携帯電話、スマートフォン、キーボード、マウスなど小型で電源容量の小さなものが主。IEEEではWPAN（Wireless Personal Area Network）として、IEEE802.15で標準化が進められている
+
+#### WiMAX
+
+- WiMAX（Worldwide Interoperability for Microwave Access）は、マイクロ波を使って、企業や自宅への無線接続を行う方式。DSLやFTTHのようなラストワンマイル（通信事業者からの最後の1区画となるネットワーク）を無線で実現する方式の1つ
+- 無線MANに属し、大都市圏（都市部）をエリアとする広範囲なワイヤレスネットワークをサポートしている。
+- WiMAXはWiMAX Forumによって名付けられ、標準化作業に伴って発生するメーカー間の機器互換性や、サービスの相互接続性などの検証を行っている
+
+#### ZigBee
+
+- 家電などに組み込むことを前提に、低消費電力で短時間の無線通信を実現する規格。最大65536個の端末間を無線通信で繋ぐ
+- 日本で利用可能な2.4GHz帯を利用するものでは最大250kbpsとされている
