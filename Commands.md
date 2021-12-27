@@ -118,3 +118,9 @@
 > ポート番号3000のプロセスを探す
 
 `lsof -P -i:3000`
+
+### whois
+
+> ドメイン、IPアドレスの情報を出力する
+
+`whois DOMAIN or IP-ADDRESS`
