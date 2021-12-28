@@ -124,3 +124,9 @@
 > ドメイン、IPアドレスの情報を出力する
 
 `whois DOMAIN or IP-ADDRESS`
+
+### netstat
+
+> 経路制御表を出力する
+
+`netstat -r`
