@@ -130,3 +130,9 @@
 > 経路制御表を出力する
 
 `netstat -r`
+
+### nslookup
+
+> ホスト名からIPアドレスを出力する
+
+`nslookup hostName`
