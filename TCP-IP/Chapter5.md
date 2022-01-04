@@ -81,3 +81,29 @@
 | SRV    | 33   | サーバーの選択                         |
 | *      | 255  | すべてのレコードの要求                 |
 
+### ARP(Address Resolution Protocol)
+
+#### ARPの概要
+
+- アドレス解決のためのプロトコル。宛先IPアドレスを手がかりにして、パケットを受け取るべき機器のMACアドレスを知りたいときに利用する。宛先のホストが同一リンク上にない場合は、次ホップのルーターのMACアドレスをARPで調べる。
+- このARPは、IPv4でのみ利用されIPv6では利用されない。代わりにICMPv6の近隣探索メッセージが利用される
+
+#### ARPの仕組み
+
+![ARPの仕組み](https://raw.githubusercontent.com/shinzanmono/Markdown/76d08b001cca566536dba1a1bfd34886ef8d8e71/images/ARP.drawio.svg)
+
+#### IPアドレスとMACアドレスは両方とも必要？
+
+- 「データリンクの宛先MACアドレスを見ればホストB宛だと分かるのに、なぜIPアドレスが必要なのか？」という疑問は、別のリンクに接続されたホストへパケットを配送することを考えると解決できる。なぜなら、ルーターを経由することで、データリンクの宛先が変わるから
+
+![MACアドレスとIPアドレスの役割の違い](https://raw.githubusercontent.com/shinzanmono/Markdown/91163dec3da2896a622c116776b3d98e2b83484a/images/MACaddress-IPaddress-different.drawio.svg)
+
+#### RARP(Reverse Address Resolution Protocol)
+
+- RRAPはARPの逆で、MACアドレスからIPアドレスを知りたい場合、プリンタサーバーなどの小型の組み込み機器をネットワーク接続したいときに使われる。
+- パソコンなどの場合は、キーボードでIPアドレスを入力したり、DHCPを使って自動的にIPアドレスを設定したりできるが、組み込み機器の場合、IPアドレスを入力するインターフェースが存在しなかったり、DHCPを使って動的なIPアドレスが設定されては困る場合もある。そのためのプロトコル
+
+#### 代理ARP(Proxy ARP)
+
+- 通常ARPパケットはルーターで遮断されるが、代理ARPを使うとルーターは隣のセグメントに転送することができる。これにより、2つ以上に分かれたセグメントが、1つのセグメントであるかのように振る舞うことができる
+
