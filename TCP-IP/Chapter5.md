@@ -107,3 +107,114 @@
 
 - 通常ARPパケットはルーターで遮断されるが、代理ARPを使うとルーターは隣のセグメントに転送することができる。これにより、2つ以上に分かれたセグメントが、1つのセグメントであるかのように振る舞うことができる
 
+#### ICMP(Internet Control Message Protocol)
+
+#### IPを補助するICMP
+
+- ICMPには、IPパケットが目的のホストまで届くかどうかを確認する機能や、何らかの原因でIPパケットが廃棄されたときにその原因を通知してくれる機能、不十分な設定をより良い設定に変更してくれる機能などがある。これらの機能により、ネットワークが正常かどうか、設定ミスや機器の異常がないかを知ることができ、トラブルシューティングが楽になる
+- ICMPには大きく分類すると、エラー通知のためのエラーメッセージと診断などを行う問い合わせメッセージの2種類がある
+
+| タイプ（10進数） | 内容                                     |
+| ---------------- | ---------------------------------------- |
+| 0                | エコー応答(Echo Reply)                   |
+| 3                | 到達不能(Destination Unreachable)        |
+| 4                | 始点抑制(Source Quench)                  |
+| 5                | リダイレクト(Redirect)                   |
+| 8                | エコー要求(Echo Request)                 |
+| 9                | ルーター広告(Router Advertisement)       |
+| 10               | ルーター請願(Router Solicitation)        |
+| 11               | 時間超過(Time Exceeded)                  |
+| 17               | アドレスマスク要求(Address Mask Request) |
+| 18               | アドレスマスク応答(Address Mask Reply)   |
+
+#### 主なICMPメッセージ
+
+**ICMP到達不能メッセージ（タイプ3）**
+
+- IPルーターがIPデータグラムを宛先に配送できない場合、送信ホストに対して送るメッセージのこと。
+- よく発生するエラーコードは1の「Host Unreachable」で、そのIPアドレスへの経路制御情報を持っていなかった場合か、そのコンピュータがネットワークに接続されていなかったことを意味する。あとコード4の「Fragmentation Needed and Don't Fragment was Set」は経路MTU探索で使われる。
+
+| コード番号 | ICMP到達不能メッセージ                                       |
+| ---------- | ------------------------------------------------------------ |
+| 0          | Network Unreachable                                          |
+| 1          | Host Unreachable                                             |
+| 2          | Protocol Unreachable                                         |
+| 3          | Port Unreachable                                             |
+| 4          | Fragmentation Needed and Don't Fragment was Set              |
+| 5          | Source Route Failed                                          |
+| 6          | Destination Network Unknown                                  |
+| 7          | Destination Host Unknown                                     |
+| 8          | Source Host Isolated                                         |
+| 9          | Communication with Destination Network is Administratively Prohibited |
+| 10         | Communication with Destination Host is Administratively Prohibited |
+| 11         | Destination Network Unreachable for Type of Service          |
+| 12         | Destination Host Unreachable for Type of Service             |
+
+**ICMPリダイレクトメッセージ（タイプ５）**
+
+- 送信元ホストが最適ではない経路を使用しているのをルーターが検出したときに、そのホストに対して送信するメッセージ。このメッセージの中に、最適経路の情報と元のデータグラムが入っている
+
+![ICMPリダイレクトメッセージ](https://raw.githubusercontent.com/shinzanmono/Markdown/55704728372108f996f43dbb9ff00dcdc52d192d/images/ICMP-redirect.drawio.svg)
+
+**ICMP時間超過メッセージ（タイプ１１）**
+
+- IPパケットには、生存時間（TTL)というフィールドがあり、パケットがルーターを通るたびに1ずつ減少し、0になるとIPデータグラムが破棄される機能がある。このときにIPルーターが、送信元に対してパケットが破棄されたことを通知するのがこれにあたる。
+
+**ICMPエコーメッセージ（タイプ０、８）**
+
+- 通信したいホストやルーターなどに、IPパケットが到達するかどうかを確認したいときに利用する。相手にICMPエコー要求メッセージを送り、相手がICMPエコー応答メッセージが返って来れば到達可能となる
+
+#### そのほかのICMPメッセージ
+
+**ICMP始点抑制メッセージ（タイプ４）**
+
+- 低速の回線に創出している側のルーターのキューの残りが0になり、創出不能になったときにメッセージをIPパケットの送信元に送る。回線のどこかが混雑している場合に送られる。また、このメッセージは不公平な通信を引き起こす恐れがあるため、ほとんど利用されていない
+
+**ICMPルーター探索メッセージ（タイプ９、１０）**
+
+- 自分が繋がっているネットワークのルーターを見つけるときに利用されるホストがICMPルーター請願メッセージを送信すると、ルーターがICMPルーター広告メッセージを返す
+
+**ICMPアドレスマスクメッセージ（タイプ１７、１８）**
+
+- サブネットマスクを調べたいホストやルーターがある場合に利用される。ホストやルーターに対してICMPアドレスマスク要求メッセージを送り、ホストやルーターがICMPアドレスマスク応答メッセージを返すことでサブネットマスクの値を知ることができる
+
+#### ICMPv6
+
+- IPv4のICMPは補助のみしか役割を持たず、なくても通信ができる。しかしIPv6ではICMPの役割が大きくなり、ないと通信できなくなる。
+- IPv6では、IPアドレスからMACアドレスを知るプロトコルがARPからICMP近隣探索メッセージに変更される。これは、IPv4のARP、ICMPリダイレクト、ICMPルーター選択メッセージなどの機能を組み合わせたもので、さらにIPアドレスの自動設定などの機能も提供する
+- 0から127までがエラーメッセージで、128から255までが情報メッセージとなっている。また、133から137までを近隣探索メッセージとなる
+
+**ICMPv6エラーメッセージ**
+
+| タイプ（１０進数） | 内容           | 内容（英語）            |
+| ------------------ | -------------- | ----------------------- |
+| 1                  | 終点到達不能   | Destination Unreachable |
+| 2                  | パケット過大   | Packet Too Big          |
+| 3                  | 時間超過       | Time Exceeded           |
+| 4                  | パラメータ問題 | Parameter Problem       |
+
+**ICMPv6情報メッセージ
+
+| タイプ（１０進数） | 内容                             | 内容（英語）                             |
+| ------------------ | -------------------------------- | ---------------------------------------- |
+| 128                | エコー要求メッセージ             | Echo Request                             |
+| 129                | エコー応答メッセージ             | Echo Reply                               |
+| 130                | マルチキャストリスナー問い合わせ | Multicast Listener Query                 |
+| 131                | マルチキャストリスナー報告       | Multicast Listener Report                |
+| 132                | マルチキャストリスナー終了       | Multicast Listener Done                  |
+| 133                | ルーター請願メッセージ           | Router Solicitation                      |
+| 134                | ルーター告知メッセージ           | Router Advertisement                     |
+| 135                | 近隣要請メッセージ               | Neighbor Solicitation                    |
+| 136                | 近隣告知メッセージ               | Neighbor Advertisement                   |
+| 137                | リダイレクトメッセージ           | Redirect Message                         |
+| 138                | ルーターリナンバリング           | Router Renumbering                       |
+| 139                | 情報問い合わせ                   | ICMP Node Information Query              |
+| 140                | 情報応答                         | ICMP Node Information Response           |
+| 141                | 逆近隣探索要請メッセージ         | Inverse Neighbor Discovery Solicitation  |
+| 142                | 逆近隣探索告知メッセージ         | Inverse Neighbor Discovery Advertisement |
+
+**近隣探索**
+
+- タイプ133から137までが近隣探索メッセージ。IPv6アドレスとMACアドレスの対応関係を調べるとき、近隣要請メッセージでMACアドレスを問い合わせ、近隣告知メッセージでMACアドレスを通知する。近隣要請メッセージは、IPv6のマルチキャストアドレスを使用して送信される
+- IPv6ではプラグ＆プレイ機能を実現するため、DHCPサーバーがない環境下でも、IPアドレスを自動設定することができる。ルーターがないネットワークなら、MACアドレスでリンクローカルユニキャストアドレスを作成する。ある環境なら、ルーターからIPv6アドレスの上位ビットの情報を取得し、下位ビットにはMACアドレスを設定する。これは、ルーター要請メッセージとルーター告知メッセージを使用して行う
+
