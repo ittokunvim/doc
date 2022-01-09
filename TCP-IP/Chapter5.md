@@ -251,3 +251,29 @@
   4. DHCPリレーエージェントは、サーバーから送られた応答をクライアントに転送する。
 
 ![DHCPリレーエージェント](https://raw.githubusercontent.com/shinzanmono/Markdown/d5c5980914ddeb333e81679c7974e8511d2c7e2b/images/DHCP-relay-agent.drawio.svg)
+
+### NAT(Network Address Translator)
+
+- ローカルネットワークでプライベートIPアドレスを使用し、インターネットへ接続するときにグローバルIPアドレスへ変換する。さらに、アドレスだけでなくNAPT(Network Address Ports Translator)の登場で、1つのグローバルIPアドレスで複数のホスト間の通信ができるようになる
+
+#### NATの仕組み
+
+![NATとNAPTの仕組み](https://raw.githubusercontent.com/shinzanmono/Markdown/26162f307ddd329d400cca2b35a1a1dffb4e070f/images/NAT-NAPT-works.drawio.svg)
+
+#### NAT-PT(NAPT-PT)
+
+- IPv6ヘッダとIPv4ヘッダを付け替える技術で、IPv6しか設定されていないホストでも、IPv4の環境と通信できるようになる
+- DNSと連携してIPヘッダを付け替えるDNS -ALG方式が今後、期待されている
+
+#### NATの問題点
+
+- NATの外側から内側のサーバーに接続することができない
+- 変換テーブルの作成や変換処理のオーバーヘッドが生じる
+- 通信中にNATが異常動作して再起動したときには、すべてのTCPコネクションがリセットされる
+- NATを2台用意して故障時に切り替えるようにしても、TCPコネクションはリセットされる
+
+#### NATの問題点の解決とNAT超え
+
+- 上記の問題点を解決する方法は主に2つある。1つはIPv6を使うこと。もう1つはNATがある環境を前提にアプリケーションを作成すること。
+- NATがあってもNATの外側と内側が通信できるようにすることをNAT超えという。
+- しかし、NATフレンドリーなアプリケーションには問題点もある。仕組みが複雑になるため、アプリケーションの作成や、想定されていない環境では動作しなくなったり、トラブルシューティングが難しくなる点などがある。
