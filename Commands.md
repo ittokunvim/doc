@@ -111,6 +111,10 @@
 
 `git revert [<commit>]`
 
+> 直前のコミットのタイトルを変更する
+
+`git commit --amend MESSAGE`
+
 ### lsof
 
 - オープンしているファイルを一覧表示する
