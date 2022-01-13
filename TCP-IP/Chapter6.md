@@ -41,5 +41,101 @@
 - TCPやUDPを利用して通信するときは、ソケットと呼ばれるAPIが広く使われている。ソケットはBSD UNIXで開発され、その後、WindowsのWinsockや、組み込み機器用のOSなどに移植された。
 - アプリケーションはソケットを利用して、通信相手のIPアドレスやポート番号を設定したり、データの送信や受信の要求をする
 
+### ポート番号
 
+#### ポート番号とは
+
+- データリンクのアドレス（MACアドレス）は、同一リンクのデータリンクに接続されたコンピュータを識別するもの
+- IPのアドレス（IPアドレス）は、TCP/IPネットワーク上に接続されているホストやルータを識別するもの
+- TCPにもアドレス（ポート番号）があり、同一のコンピュータ内で通信を行なっているプログラムを識別するもの
+
+#### ポート番号によるアプリケーションの識別
+
+- コンピュータは、WWWサービスを受けるためのWebブラウザや、電子メールを送受信するメールソフト、遠隔ログインするためのsshクライアントなどアプリケーションプログラムなど、複数のプログラムを1台で動作させることができる
+
+#### IPアドレスとポート番号とプロトコル番号による通信の識別
+
+![複数の要求と識別](https://raw.githubusercontent.com/shinzanmono/Markdown/009c25cd6e561335c9cd228a23e4e197e937a6e5/images/many-request-and-response.drawio.svg)
+
+- 上記のように、TCP/IPやUDP/IPによる通信では、送信元IPアドレス、宛先IPアドレス、プロトコル番号、送信元ポート番号
+  宛先ポート番号の5つの数字組み合わせで通信を識別する
+
+#### ポート番号の決め方
+
+**標準で決められている番号**
+
+- アプリケーションごとに、どのポート番号を使うかを固定的に決める方法。
+- HTTP, TELNET, FTPなど広く使われているアプリケーションプロトコルでは、使用するポート番号が決められており、ウェルノウンポート番号と呼ばれる。また、1024~49151までの番号は、正式に登録されている番号だが、他の用途に使っても大きな問題はない。これらのポート番号は多くの場合、サーバー側で使用されるポート番号である
+- ポート番号一覧：https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml
+
+**ダイナミックな割り当て法**
+
+- ポート番号をアプリケーションごとに同じ値にならないように、OSで決めさせる方法
+- 動的に割り当てるポート番号は49152~65535までの整数で、主にクライアント側で使用されるポート番号である
+
+#### ポート番号とプロトコル
+
+- ウェルノウンポート番号はトランスポートプロトコルと関係なく同じなので、TCPでUDPの処理をすることも不可能ではない
+- データがIP層に到着すると、IPヘッダ中のプロトコル番号がチェックされ、TCPのモジュールや、UDPのモジュールに渡され、ポート番号の処理を行う。
+
+**TCPの代表的なウェルノウンポート番号**
+
+| ポート番号   | サービス名         | 内容                                  |
+| ---------- | ---------------- | ------------------------------------- |
+| 1          | tcpmux           | TCP Port Service Multiplexer          |
+| 7          | echo             | Echo                                  |
+| 9          | discard          | Discard                               |
+| 11         | systat           | Active Users                          |
+| 13         | daytime          | Daytime (RFC 867)                     |
+| 17         | qotd             | Quote of the Day                      |
+| 19         | chargen          | Character Generator                   |
+| 20         | ftp-data         | File Transfer [Default Data]          |
+| 21         | ftp              | File Transfer [Control]               |
+| 22         | ssh              | SSH Remote Login Protocol             |
+| 23         | telnet           | Telnet                                |
+| 25         | smtp             | Simple Mail Transfer                  |
+| 43         | nicname          | Who Is                                |
+| 53         | domain           | Domain Name Server                    |
+| 70         | gopher           | Gopher                                |
+| 79         | finger           | Finger                                |
+| 80         | http ( www-http) | World Wide Web HTTP                   |
+| 95         | supdup           | SUPDUP                                |
+| 101        | hostname         | NIC Host Name Server                  |
+| 102        | iso-tsap         | ISO-TSAP Class 0                      |
+| 109        | pop2             | Post Office Protocol - Version 2      |
+| 110        | pop3             | Post Office Protocol - Version 3      |
+| 111        | sunrpc           | SUN Remote Procedure Call             |
+| 113        | auth ( ident )   | Authentication Service                |
+| 117        | uucp-path        | UUCP Path Service                     |
+| 119        | nntp             | Network News Transfer Protocol        |
+| 123        | ntp              | Network Time Protocol                 |
+| 143        | imap             | Internet Message Access Protocol      |
+| 163        | cmip-man         | CMIP/TCP Manager                      |
+| 164        | cmip-agent       | CMIP/TCP Agent                        |
+| 179        | bgp              | Border Gateway Protocol               |
+| 194        | irc              | Internet Relay Chat Protocol          |
+| 220        | imap3            | Interactive Mail Access Protocol v3   |
+| 389        | ldap             | Lightweight Directory Access Protocol |
+| 443        | https            | http protocol over TLS/SSL            |
+| 515        | printer          | Printer spooler ( lpr )               |
+| 587        | submission       | Submission                            |
+| 636        | ldaps            | ldap protocol over TLS/SSL            |
+| 989        | ftps-data        | ftp protocol, data, over TLS/SSL      |
+| 990        | ftps             | ftp protocol, control, over TLS/SSL   |
+| 993        | imaps            | imap4 protocol over TLS/SSL           |
+| 995        | pop3s            | pop3 protocol over TLS/SSL            |
+
+**UDPの代表的なウェルノウンポート番号**
+
+| ポート番号   | サービス名   | 内容                      |
+| ---------- | ---------- | ------------------------- |
+| 7          | echo       | Echo                      |
+| 9          | discard    | Discard                   |
+| 11         | systat     | Active Users              |
+| 13         | daytime    | Daytime (RFC 867)         |
+| 17         | qotd       | Quote of the Day          |
+| 19         | chargen    | Character Generator       |
+| 53         | domain     | Domain Name Server        |
+| 111        | sunrpc     | SUN Remote Procedure Call |
+| 123        | ntp        | Network Time Protocol     |
 
