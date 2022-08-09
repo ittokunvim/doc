@@ -115,6 +115,10 @@
 
 `git commit --amend MESSAGE`
 
+> 過去のコミットを、まとめたり、編集する
+
+`git rebase -i COMMIT`
+
 ### lsof
 
 - オープンしているファイルを一覧表示する
