@@ -156,14 +156,14 @@
 
 #### OSI参照モデル
 
-![OSI参照モデル](https://raw.githubusercontent.com/shinzanmono/Markdown/55269d3fceb5f179dcaa5a7defa838661a1060c5/images/OSI.drawio.svg)
+![OSI参照モデル](images/osi.drawio.svg)
 
 - OSI参照モデルは最初に学ばなければならない登竜門的存在
 - また、それはあくまで「モデル」であり、各層の大まかな役割を決めているだけで、プロトコルやインターフェースの詳細を決めるものではない
 
 #### OSI参照モデルの各層の役割
 
-![OSI-役割](https://raw.githubusercontent.com/shinzanmono/Markdown/55269d3fceb5f179dcaa5a7defa838661a1060c5/images/OSI-%E5%BD%B9%E5%89%B2.drawio.svg)
+![OSI-役割](images/osi-yakuwari.drawio.svg)
 
 ### OSI参照モデルによる通信処理の例
 
@@ -294,11 +294,11 @@
 - そのためにアドレスごとに送出インターフェースを記したテーブルを参照する。
 - MACアドレスの場合は転送表（フォワーディングテーブル）、IPアドレスの場合は経路制御表（ルーティングテーブル）という
 
-![Address_NIC](https://github.com/shinzanmono/Markdown/blob/main/images/address_NIC.drawio.png?raw=true)
+![Address_NIC](images/address_NIC.drawio.png)
 
 ### ネットワークの構成要素
 
- ![components-network](https://github.com/shinzanmono/Markdown/blob/main/images/components-network.jpg?raw=true)
+ ![components-network](images/components-network.jpg)
 
 |             機器             |                           役割                           |
 | :--------------------------: | :------------------------------------------------------: |
@@ -376,9 +376,9 @@
 - インターネットの電子メールと、携帯電話の電子メールはプロトコルが違うため通信できないが、インターネットと携帯電話を接続している接点にゲートウェイがあり、解読、変換、中継をするので電子メールのやり取りが可能になる
 - またWWW(World Wide Web)を使用するときに、ネットワークトラフィックの軽減やセキュリティを意図して代理サーバー（Proxy Server）を設定する場合があり、これもゲートウェイの一種であ理、アプリケーションゲートウェイと呼ぶ
 
-![proxy-server](https://github.com/shinzanmono/Markdown/blob/main/images/proxy-server.jpg?raw=true)
+![proxy-server](images/proxy-server.jpg)
 
-![repeater-layers.drawio](https://raw.githubusercontent.com/shinzanmono/Markdown/55269d3fceb5f179dcaa5a7defa838661a1060c5/images/repeater-layers.drawio.svg)
+![repeater-layers.drawio](images/repeater-layers.drawio.svg)
 
 ### 現在のネットワークの姿
 
