@@ -23,7 +23,7 @@
 - MACアドレスは、データリンクに接続しているノードを識別するために利用される。
 - MACアドレスは48ビットの長さを持ち、下記のような構造を持つ
 
-![MAC Address](https://raw.githubusercontent.com/shinzanmono/Markdown/8922a4f09155bcb80d8a3c54780cce1af305cea9/images/mac-address.drawio.svg)
+![MAC Address](images/mac-address.drawio.svg)
 
 - 3~24ビットはベンダ識別子と言い、NICの製造メーカーごとに特定の数字が割り当てられている。25~48ビットは、メーカーが製造したカード（NIC）ごとに違う数字を割り当てる。こうすることによりユニークになる
 
@@ -50,7 +50,7 @@
 - コンテンション方式（Contention）とは、データの送信権を競争で奪い取る方式。CSMA方式とも呼ばれる
 - 早い者勝ちで通信炉を使用してデータを送信する。複数のステーション（データリンクではノードのこと）からデータが同時に送信された場合、お互いのデータが衝突し壊れる（コリジョン）。ネットワークが混雑すると性能が低下する
 
-![Contention方式](https://raw.githubusercontent.com/shinzanmono/Markdown/a7e2273d6c7654f7a2c6c658b5b8b7084d2ca50e/images/contention.drawio.svg)
+![Contention方式](images/contention.drawio.svg)
 
 - イーサネットの一部では、CSMA方式を改良したCSMA/CD(Collision Detection)方式が採用されている
   - 搬送波が流れていなければ全てのステーションはデータを送信しても良い
@@ -63,7 +63,7 @@
 - 利点は、衝突が発生しない、誰にでも平等に送信権が回ってくる
 - 欠点は、トークンが回ってくるまでデータを送信できない。しかし、アーリートークン方式やアベンドトークン方式（自分が送信したデータが一周するまで待たずに、トークンを次に渡す）、複数のトークンを同時に巡回させるなどの技法により、工夫されている
 
-![Token passing方式](https://raw.githubusercontent.com/shinzanmono/Markdown/6053847abf29cb0d61349c9aea1895fa49fb2839/images/token-passing.drawio.svg)
+![Token passing方式](images/token-passing.drawio.svg)
 
 #### 媒体非共有型のネットワーク
 
@@ -71,7 +71,7 @@
 - スイッチに高度な機能を持たせることによって、仮想的なネットワーク（VLAN：バーチャルLAN）の構築やデータの流量の制御なども可能になる。
 - その反面、スイッチが故障すると全てのコンピュータ間の通信ができなくなる
 
-![媒体非共有型](https://raw.githubusercontent.com/shinzanmono/Markdown/167f76101830e1b20c50e55b7e5f47c5c026446f/images/%E5%AA%92%E4%BD%93%E9%9D%9E%E5%85%B1%E6%9C%89%E5%9E%8B.drawio.svg)
+![媒体非共有型](images/media-less.drawio.svg)
 
 **半二重通信と全二重通信**
 
@@ -120,7 +120,7 @@
 - タグVLANは、セグメントごとに一意となるVLANIDを設定して、スイッチ間でフレームを転送する時にはイーサネットのヘッダの中にVLANタグを挿入し、その値をもとにしてどのセグメントにフレームを転送するかを決定する
 - VLANを導入することによって、配線の変更を行うことなく、ネットワークセグメントを変更できるが、管理が難しい
 
-![VLAN](https://raw.githubusercontent.com/shinzanmono/Markdown/68ee56a05f9430a4d0efaebdf923679379c2f499/images/VLAN.drawio.svg)
+![VLAN](images/vlan.drawio.svg)
 
 ### イーサネット（Ethernet）
 
@@ -133,11 +133,11 @@
 
 **かつてのイーサネットネットワーク**
 
-![かつてのイーサネットネットワーク](https://raw.githubusercontent.com/shinzanmono/Markdown/d78bc0ebdfc1f3aae4bcff3888e67c1d67b87cf2/images/ethernet-network-1.drawio.svg)
+![かつてのイーサネットネットワーク](images/ethernet-network-1.drawio.svg)
 
 **現在のイーサネットネットワーク**
 
-![現在のイーサネットネットワーク](https://raw.githubusercontent.com/shinzanmono/Markdown/d78bc0ebdfc1f3aae4bcff3888e67c1d67b87cf2/images/ethernet-network-2.drawio.svg)
+![現在のイーサネットネットワーク](images/ethernet-network-2.drawio.svg)
 
 #### イーサネットにはいろいろな種類がある
 
@@ -190,7 +190,7 @@
   - バイトは、8ビットが1バイト
   - オクテットは、8ビットが１オクテット
 
-  ![イーサネットフレーム](https://raw.githubusercontent.com/shinzanmono/Markdown/a8f7211a35b97758cf7aa5b95fea1c19d3bddaa3/images/ethernet-frame.drawio.svg)
+  ![イーサネットフレーム](images/ethernet-frame.drawio.svg)
 
 - タイプにはデータ部で運んでいるプロトコルを表す番号が格納されている
   - https://www.vwnet.jp/Windows/Other/Ethertype.html
@@ -201,7 +201,7 @@
 - 媒体アクセス制御とは、イーサネットやFDDIなどのデータリンクごとに決まっているヘッダ制御のこと
 - 論理リンク制御とは、例えばタイプの値が05DCの時にIEEE802.3 Ethernetでは長さを表すタイプです。しかし、長さはわかっても上位層のプロトコルがわからない。そこでLLC\SNAPヘッダで上位層のプロトコルがわかるようになる
 
-![LLC/SNAPフォーマット](https://raw.githubusercontent.com/shinzanmono/Markdown/863f576d704fa6df36099f1bc347d4c321da63c2/images/LLC_SNAP.drawio.svg)
+![LLC/SNAPフォーマット](images/llc-snap.drawio.svg)
 
 ### 無線通信
 
@@ -223,7 +223,7 @@
 - 無線LANプロトコルの物理層とデータリンク層の一部（MAC層）を定義した規格
 - MAC層ではイーサネットと同じMACアドレスが利用され、CSMA/CDとよく似たCSMA/CAというアクセス制御方式を採用している
 
-![無線LAN](https://raw.githubusercontent.com/shinzanmono/Markdown/aedd694457e321e1fb58abc61d31bcb352d5d1d6/images/wireless-LAN.drawio.svg)
+![無線LAN](images/wireless-lan.drawio.svg)
 
 #### IEEE802.11b, IEEE802.11g
 
@@ -285,14 +285,14 @@
 - フラグシーケンスで挟まれたフレーム内部では「1」が6つ続くことはない。もし続いてしまう場合「0」を挿入する
 - 「0」の挿入や削除の処理、FCSの計算を全てコンピュータが処理するため、PPPはコンピュータのCPUに大きな負荷をかける方式といえる
 
-![PPPフレーム](https://raw.githubusercontent.com/shinzanmono/Markdown/f85016ee59a998795b049a6d1f2bbdbf4f72abdc/images/PPP.drawio.svg)
+![PPPフレーム](images/ppp.drawio.svg)
 
 #### PPPoE（PPP over Ethernet）
 
 - インターネット接続サービスによっては、イーサネットを利用してPPPの機能を提供するPPPoEが利用されている場合がある。通信回線をイーサネットのようにエミュレートする
 - イーサネットには認証機能がなく、コネクションの確立・切断の処理もないため、利用時間による課金などもできないが、PPPoEを利用することで、プロバイダが顧客の管理をしやすくする
 
-![PPPoEデータフレームフォーマット](https://raw.githubusercontent.com/shinzanmono/Markdown/0ee556e09bf01d2c21f065bb444a33f0c6ed6eb2/images/PPPoE.drawio.svg)
+![PPPoEデータフレームフォーマット](images/pppoe.drawio.svg)
 
 ### その他のデータリンク
 
@@ -310,7 +310,7 @@
 - 送信側で、識別するための5オクテットのヘッダをつける。ヘッダにはVPI（Virtual Path Identifier）、VCI（Virtual Channel Identifier）という識別子がついていて識別する。
 - ATMを利用するとからのスロットを減らすことができ、回線の利用効率が向上するが、ヘッダがオーバヘッドとなり、その分通信速度が低下する。
 
-![TDMとATM](https://raw.githubusercontent.com/shinzanmono/Markdown/21b807db09fafe61e6683ffddf57f1718cecd75e/images/TDM-ATM.drawio.svg)
+![TDMとATM](images/tdm-atm.drawio.svg)
 
 **ATMと上位層**
 
@@ -318,7 +318,7 @@
 - このためATMを単独で使うのではなく、AAL（ATM Adaptatuib Layer）という上位層と共に利用する。IPの場合はAAL5が使われる。最大で192個のセルに分割されて送信される
 - ただ、192個のセルの内1つでも失われるとパケットは破棄される、そのためネットワークのふくそうが起こりやすく、使用するときはセルの喪失がなるべく発生しにくいようなネットワークを作ることが重要
 
-![ATMにおけるパケットのセル化](https://raw.githubusercontent.com/shinzanmono/Markdown/a077f38b7e52c56d5a0bbba226fe677a9e34c22a/images/ATM-cell.drawio.svg)
+![ATMにおけるパケットのセル化](images/atm-cell.drawio.svg)
 
 #### POS（Packet over SDH/SONET）
 

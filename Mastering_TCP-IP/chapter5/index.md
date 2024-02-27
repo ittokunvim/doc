@@ -56,7 +56,7 @@
 
 #### DNSによる問い合わせ
 
-![DNSによる問い合わせ](https://raw.githubusercontent.com/shinzanmono/Markdown/3081dab374c534b267cbcf7c3233cb87d2313e97/images/DNS-query.drawio.svg)
+![DNSによる問い合わせ](images/DNS-query.drawio.svg)
 
 #### DNSはインターネットに広がる分散データ
 
@@ -90,13 +90,13 @@
 
 #### ARPの仕組み
 
-![ARPの仕組み](https://raw.githubusercontent.com/shinzanmono/Markdown/76d08b001cca566536dba1a1bfd34886ef8d8e71/images/ARP.drawio.svg)
+![ARPの仕組み](images/ARP.drawio.svg)
 
 #### IPアドレスとMACアドレスは両方とも必要？
 
 - 「データリンクの宛先MACアドレスを見ればホストB宛だと分かるのに、なぜIPアドレスが必要なのか？」という疑問は、別のリンクに接続されたホストへパケットを配送することを考えると解決できる。なぜなら、ルーターを経由することで、データリンクの宛先が変わるから
 
-![MACアドレスとIPアドレスの役割の違い](https://raw.githubusercontent.com/shinzanmono/Markdown/91163dec3da2896a622c116776b3d98e2b83484a/images/MACaddress-IPaddress-different.drawio.svg)
+![MACアドレスとIPアドレスの役割の違い](images/MACaddress-IPaddress-different.drawio.svg)
 
 #### RARP(Reverse Address Resolution Protocol)
 
@@ -154,7 +154,7 @@
 
 - 送信元ホストが最適ではない経路を使用しているのをルーターが検出したときに、そのホストに対して送信するメッセージ。このメッセージの中に、最適経路の情報と元のデータグラムが入っている
 
-![ICMPリダイレクトメッセージ](https://raw.githubusercontent.com/shinzanmono/Markdown/55704728372108f996f43dbb9ff00dcdc52d192d/images/ICMP-redirect.drawio.svg)
+![ICMPリダイレクトメッセージ](images/ICMP-redirect.drawio.svg)
 
 **ICMP時間超過メッセージ（タイプ１１）**
 
@@ -224,7 +224,7 @@
 
 - 面倒なIPアドレスの設定を自動化したり、配布するIPアドレスの一括管理を行うプロトコル。コンピュータをネットワークに接続しただけでTCP/IPによる通信ができるようになる。IPv4, IPv6共に利用可能
 
-![DHCP](https://raw.githubusercontent.com/shinzanmono/Markdown/614f1f9566e56cba35a4567eddd5b42e902d4db8/images/DHCP-works.drawio.svg)
+![DHCP](images/DHCP-works.drawio.svg)
 
 #### DHCPの仕組み
 
@@ -250,7 +250,7 @@
   3. DHCPサーバーは、転送されたパケットを処理し、DHCPリレーエージェントに応答を返す。
   4. DHCPリレーエージェントは、サーバーから送られた応答をクライアントに転送する。
 
-![DHCPリレーエージェント](https://raw.githubusercontent.com/shinzanmono/Markdown/d5c5980914ddeb333e81679c7974e8511d2c7e2b/images/DHCP-relay-agent.drawio.svg)
+![DHCPリレーエージェント](images/DHCP-relay-agent.drawio.svg)
 
 ### NAT(Network Address Translator)
 
@@ -258,7 +258,7 @@
 
 #### NATの仕組み
 
-![NATとNAPTの仕組み](https://raw.githubusercontent.com/shinzanmono/Markdown/26162f307ddd329d400cca2b35a1a1dffb4e070f/images/NAT-NAPT-works.drawio.svg)
+![NATとNAPTの仕組み](images/NAT-NAPT-works.drawio.svg)
 
 #### NAT-PT(NAPT-PT)
 
@@ -350,7 +350,7 @@
 - UDPも同様。ただしUDPはコネクションレスのため、アプリケーションがIPアドレスの変更に対応するようにされていれば、解決するかもしれないが、現実的ではない
 - Mobile IPを使うと、ホストが接続しているサブネットを変えても、IPアドレスが変わらないようになる。
 
-![Mobile IP](https://raw.githubusercontent.com/shinzanmono/Markdown/a258515e6dc13fcda53fe09dd2b0cf1856481d4f/images/MobileIP-IPtonneling.drawio.svg)
+![Mobile IP](images/MobileIP-IPtonneling.drawio.svg)
 
 - 移動ホスト（MH:Mobile Host)
   - 移動してもIPアドレスが変わらないホスト。移動していないときに接続するネットワークをホームネットワークと呼び、そこで利用するIPアドレスをホームアドレスと呼ぶ。移動した場合には、そのサブネットのIPアドレスも設定される。これを気付けアドレス（CoA : care address)という

@@ -19,7 +19,7 @@
 - 旅行する場合を例とすると、飛行機や電車、バスなどを乗り継いで行く時、その区間をデータリンク、その切符や航空券がプロトコル、旅行の工程表がネットワーク層に当たる
 - 工程表だけでは乗り物に乗れず、目的地には行けない。逆に、切符だけでは目的地がわからないので行けない、ということである
 
-![IPの役割とデータリンクの役割](https://raw.githubusercontent.com/shinzanmono/Markdown/07e943317bc5ae719ef7a82c7d9d061bdc6a1782/images/datalink-and-ip.drawio.svg)
+![IPの役割とデータリンクの役割](images/datalink-and-ip.drawio.svg)
 
 ### IPの基礎知識
 
@@ -56,7 +56,7 @@
 - IPの上位層からは実際の通信が、イーサネット、無線LAN、PPPなどで行われようと、全く同じように見えなければいけない
 - MTUを超えるパケットを要求する場合、IPでは分割処理（フラグメンテーション）を行い、大きなIPパケットを複数の小さいIPパケットに分割する。
 
-![データリンクによってMTU(Maximum Transmission Unit)が異なる](https://raw.githubusercontent.com/shinzanmono/Markdown/e7d21c15291c7995509d8037f51cad128ddd7191/images/datalink-MTU.drawio.svg)
+![データリンクによってMTU(Maximum Transmission Unit)が異なる](images/datalink-MTU.drawio.svg)
 
 #### IPはコネクションレス型
 
@@ -89,7 +89,7 @@ IPアドレスで表すことのできる数は
 - ネットワーク部（ネットワークアドレス部）は、データリンクのセグメントごとに値が割り当てられる。接続されているセグメントのアドレスと重ならないように設定される。ホスト部も、同一セグメント内で重ならない値を割り当てられる
 - 初期のIPでは、ネットワーク部とホスト部はクラスによって分けられていたが、現在はサブネットマスク（ネットワークプレフィクス）によって分けられる
 
-![IPアドレスのホスト部とネットワーク部](https://raw.githubusercontent.com/shinzanmono/Markdown/42cbdb64898c1239a9796a5c34d782babdbb517a/images/ipaddress-network-host.drawio.svg)
+![IPアドレスのホスト部とネットワーク部](images/ipaddress-network-host.drawio.svg)
 
 #### IPアドレスのクラス
 
@@ -113,7 +113,7 @@ IPアドレスで表すことのできる数は
 
 #### IPマルチキャスト
 
-![ユニキャスト、ブロードキャスト、マルチキャストの通信](https://raw.githubusercontent.com/shinzanmono/Markdown/b2eb504c89c8a38daecd7c1982827127fb29a389/images/ip-malticast.drawio.svg)
+![ユニキャスト、ブロードキャスト、マルチキャストの通信](images/ip-malticast.drawio.svg)
 
 **同時送信で効率アップ**
 
@@ -172,7 +172,7 @@ IPアドレスで表すことのできる数は
 
 #### IPアドレスと経路制御（ルーティング）
 
-![経路制御表とIPパケットの配送](https://raw.githubusercontent.com/shinzanmono/Markdown/f1f773a35d3a9dea5a25912dccffcf4509156e04/images/deliver-ippacket-routingtable.drawio.svg)
+![経路制御表とIPパケットの配送](images/deliver-ippacket-routingtable.drawio.svg)
 
 - 経路制御表には、ネットワークアドレスと、次に配送すべきルーターのアドレスが書かれている。IPパケットを送信するときは、宛先アドレスを調べて経路制御表から一致するネットワークアドレスを検索し、対応する次のルーターに配送する。ネットワークアドレスが複数ある場合は、一致するビット列の長いネットワークアドレスを選択する
 - つまり、`172.20/16`と`172.20.100/24`だと後者を選択する。また、次に配送するルータのアドレスが記載されている場所にそのホストやルーター自身のネットワークインターフェースのIPアドレスが書かれている場合は、宛先のホストが同一データリンクに接続されているという意味
@@ -215,7 +215,7 @@ IPアドレスで表すことのできる数は
 
 #### IPデータグラムの分割処理と再構築処理
 
-![IPデータグラムの分割処理と再構築処理](https://raw.githubusercontent.com/shinzanmono/Markdown/6bede7a2e9a13efd5516b704a34247db734bcd28/images/data-division-proccessing.drawio.svg)
+![IPデータグラムの分割処理と再構築処理](images/data-division-proccessing.drawio.svg)
 
 #### 経路MTU探索（Path MTU Discorvery）
 
@@ -295,7 +295,7 @@ FEDC:BA98:7654:3210:FEDC:BA98:7654:3210
 
 ### IPv4ヘッダ
 
-![IPデータグラムフォーマット(IPv4)](https://raw.githubusercontent.com/shinzanmono/Markdown/6b9029976db1eb20af5766385f062f9b742a988f/images/IPv4-header.drawio.svg)
+![IPデータグラムフォーマット(IPv4)](images/IPv4-header.drawio.svg)
 
 **バージョン**
 
@@ -419,7 +419,7 @@ FEDC:BA98:7654:3210:FEDC:BA98:7654:3210
 
 #### IPv6のヘッダフォーマット
 
-![IPv6パケットフォーマット](https://raw.githubusercontent.com/shinzanmono/Markdown/007f14c88d3c8f3366a9d2128d28a1be6bbb1217/images/IPv6-header.drawio.svg)
+![IPv6パケットフォーマット](images/IPv6-header.drawio.svg)
 
 **バージョン（Version）**
 

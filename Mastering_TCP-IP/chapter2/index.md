@@ -95,7 +95,7 @@
 - それぞれのネットワークは、バックボーン（基幹ネットワーク）と、スタブ（末端のネットワーク部分）から構成されている
 - ネットワークとネットワークはNOC（Network Operation Center）で接続されます、また、ネットワークの運用者や運用方針、利用方針などが異なるネットワークを対等に接続するポイントはIX（Internet Exchange）と呼ぶ
 
-![Internet Structure](https://raw.githubusercontent.com/shinzanmono/Markdown/a72cd88ed8a4112003a31485029a593cdc205844/images/internet-structure.drawio.svg)
+![Internet Structure](images/internet-structure.drawio.svg)
 
 #### ISPと地域ネット
 
@@ -107,7 +107,7 @@
 
 #### TCP/IPとOSI参照モデル
 
-![TCP/IP-and-OSI](https://raw.githubusercontent.com/shinzanmono/Markdown/a72cd88ed8a4112003a31485029a593cdc205844/images/TCP_IP-and-OSI.drawio.svg)
+![TCP/IP-and-OSI](images/tcp-ip-and-osi.drawio.svg)
 
 - OSI参照モデルは「通信プロトコルに必要な機能は何か」を中心に考えてモデル化されているのに対し、
 - TCP/IPの階層モデルは「プロトコルをコンピュータに実装するにはどのようにプログラミングしたらよいか」を中心に考えてモデル化されている
@@ -235,7 +235,7 @@ UDP（User Datagram Protocol）
 
 - 電子メールを利用してTCP/IP上で「おはようございます」という文字列を2つのコンピュータ間でやり取りする例
 
-![sending-receiving-email](https://raw.githubusercontent.com/shinzanmono/Markdown/dda976fa60b2e45901fc8e192df493f2e9405c6f/images/sending-reciving-email.drawio.svg)
+![sending-receiving-email](images/sending-reciving-email.drawio.svg)
 
 1. **アプリケーション層**
 
@@ -264,7 +264,7 @@ UDP（User Datagram Protocol）
 
 #### データリンクを流れるパケットの様子
 
-![packet-structure](https://raw.githubusercontent.com/shinzanmono/Markdown/dda976fa60b2e45901fc8e192df493f2e9405c6f/images/packet-structure.drawio.svg)
+![packet-structure](images/packet-structure.drawio.svg)
 
 - それぞれのヘッダには「宛先と送信元のアドレス」と「上位層のプロトコルが何かを示す情報」が少なくとも入っている
 - それぞれのヘッダには「識別子」がついている。イーサネットヘッダはイーサネットタイプ、IPはプロトコルタイプ、TCP/UDPはサーバー側のポート番号、アプリケーションのヘッダはタグが付けられている場合もある
