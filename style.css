@@ -1,0 +1,62 @@
+:root {
+	--color-background-primary: #f5f5f5;
+	--color-text-primary: #333333;
+	--color-text-link: #007bff;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	background-color: var(--color-background-primary);
+	color: var(--color-text-primary);
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.8rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+hr {
+	margin: 1rem;
+	padding: 1rem;
+	border: none;
+	border-bottom: 1px solid #cccccc;
+}
+
+#markdown {
+	padding: 0 1rem;
+}
+
+#markdown p {
+	font-weight: bold;
+}
+
+#markdown ol {
+	padding-inline-start: 2em;
+}
+
+#markdown li {
+	margin-bottom: 0.5em;
+}
+
+#markdown li:last-child {
+	margin-bottom: 0;
+}
+
+#markdown li a {
+	color: var(--color-text-link);
+	text-decoration: none;
+}
+
+#markdown li a:hover {
+	text-decoration: underline;
+}
