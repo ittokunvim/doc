@@ -1,41 +1,51 @@
 [
 	{
+		"slug": "mastering-tcpip-chapter1",
 		"title": "Mastering TCP/IP 第1章",
 		"path": "mastering-tcp-ip/chapter1"
 	},
 	{
+		"slug": "mastering-tcpip-chapter2",
 		"title": "Mastering TCP/IP 第2章",
 		"path": "mastering-tcp-ip/chapter2"
 	},
 	{
+		"slug": "mastering-tcpip-chapter3",
 		"title": "Mastering TCP/IP 第3章",
 		"path": "mastering-tcp-ip/chapter3"
 	},
 	{
+		"slug": "mastering-tcpip-chapter4",
 		"title": "Mastering TCP/IP 第4章",
 		"path": "mastering-tcp-ip/chapter4"
 	},
 	{
+		"slug": "mastering-tcpip-chapter5",
 		"title": "Mastering TCP/IP 第5章",
 		"path": "mastering-tcp-ip/chapter5"
 	},
 	{
+		"slug": "mastering-tcpip-chapter6",
 		"title": "Mastering TCP/IP 第6章",
 		"path": "mastering-tcp-ip/chapter6"
 	},
 	{
+		"slug": "readable-code-part1",
 		"title": "Readable Code 第1部",
 		"path": "readable-code/part1"
 	},
 	{
+		"slug": "readable-code-part2",
 		"title": "Readable Code 第2部",
 		"path": "readable-code/part2"
 	},
 	{
+		"slug": "readable-code-part3",
 		"title": "Readable Code 第3部",
 		"path": "readable-code/part3"
 	},
 	{
+		"slug": "tech-regexp",
 		"title": "正規表現についてまとめてみた",
 		"path": "tech/regexp"
 	}
