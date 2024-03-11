@@ -25,6 +25,6 @@
 
 1. [regexp](tech/regexp/index.md)
 
-**memo**
+**etc**
 
-1. [markdown example](memo/markdown_example.md)
+1. [markdown example](etc/markdown_example.md)

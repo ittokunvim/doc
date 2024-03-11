@@ -50,8 +50,8 @@
 		"path": "tech/regexp/index.md"
 	},
 	{
-		"slug": "memo-markdown-example",
+		"slug": "etc-markdown-example",
 		"title": "マークダウンの例",
-		"path": "memo/markdown-example.md"
+		"path": "etc/markdown-example.md"
 	}
 ]
