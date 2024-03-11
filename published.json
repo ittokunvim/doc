@@ -48,5 +48,10 @@
 		"slug": "tech-regexp",
 		"title": "正規表現についてまとめてみた",
 		"path": "tech/regexp/index.md"
+	},
+	{
+		"slug": "memo-markdown-example",
+		"title": "マークダウンの例",
+		"path": "memo/markdown-example.md"
 	}
 ]

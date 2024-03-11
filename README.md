@@ -2,6 +2,8 @@
 
 このリポジトリは、自分が書いたマークダウンファイルの保管場所です
 
+また、公開するマークダウンファイルは[published.json](published.json)にまとめています。
+
 ## 目次
 
 **Mastering TCP/IP**
@@ -22,3 +24,7 @@
 **tech**
 
 1. [regexp](tech/regexp/index.md)
+
+**memo**
+
+1. [markdown example](memo/markdown_example.md)
