@@ -53,5 +53,10 @@
 		"slug": "etc-markdown-example",
 		"title": "マークダウンの例",
 		"path": "etc/markdown_example.md"
+	},
+	{
+		"slug": "tech-fontawesome-nextjs-big-icon",
+		"title": "Next.jsでFontAwesomeを使用する際にアイコンが巨大化する現象と解決方法",
+		"path": "tech/fontawesome-nextjs-big-icon/index.md"
 	}
 ]

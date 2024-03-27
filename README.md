@@ -24,6 +24,7 @@
 **tech**
 
 1. [regexp](tech/regexp/index.md)
+2. [fontawesome-nextjs-big-icon](tech/fontawesome-nextjs-big-icon/index.md)
 
 **etc**
 
