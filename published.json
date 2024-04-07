@@ -70,5 +70,11 @@
 		"title": "Next.jsでFontAwesomeを使用する際にアイコンが巨大化する現象と解決方法",
 		"path": "tech/fontawesome-nextjs-big-icon/index.md",
 		"createdAt": "2024-03-27"
+	},
+	{
+		"slug": "fanky-jaggler2",
+		"title": "ファンキージャグラー2について",
+		"path": "etc/fanky-jaggler2/index.md",
+		"createdAt": "2024-04-08"
 	}
 ]

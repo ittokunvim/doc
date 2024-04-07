@@ -29,3 +29,4 @@
 **etc**
 
 1. [markdown example](etc/markdown_example.md)
+2. [ファンキージャグラー2](etc/fanky-jaggler2/index.md)
