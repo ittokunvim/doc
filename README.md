@@ -30,4 +30,5 @@
 
 1. [markdown example](etc/markdown_example.md)
 2. [ファンキージャグラー2](etc/fanky-jaggler2/index.md)
-2. [ハッピージャグラーVⅢ](etc/happy-jaggler-v3/index.md)
+3. [ハッピージャグラーVⅢ](etc/happy-jaggler-v3/index.md)
+4. [マイジャグラーV](etc/my-jaggler-v/index.md)
