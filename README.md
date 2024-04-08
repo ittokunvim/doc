@@ -26,9 +26,12 @@
 1. [regexp](tech/regexp/index.md)
 2. [fontawesome-nextjs-big-icon](tech/fontawesome-nextjs-big-icon/index.md)
 
+**slot**
+
+1. [ファンキージャグラー2](slot/fanky-jaggler2/index.md)
+2. [ハッピージャグラーVⅢ](slot/happy-jaggler-v3/index.md)
+3. [マイジャグラーV](slot/my-jaggler-v/index.md)
+
 **etc**
 
 1. [markdown example](etc/markdown_example.md)
-2. [ファンキージャグラー2](etc/fanky-jaggler2/index.md)
-3. [ハッピージャグラーVⅢ](etc/happy-jaggler-v3/index.md)
-4. [マイジャグラーV](etc/my-jaggler-v/index.md)

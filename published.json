@@ -74,19 +74,19 @@
 	{
 		"slug": "fanky-jaggler2",
 		"title": "ファンキージャグラー2",
-		"path": "etc/fanky-jaggler2/index.md",
+		"path": "slot/fanky-jaggler2/index.md",
 		"createdAt": "2024-04-08"
 	},
 	{
 		"slug": "happy-jaggler-v3",
 		"title": "ハッピージャグラーVⅢ",
-		"path": "etc/happy-jaggler-v3/index.md",
+		"path": "slot/happy-jaggler-v3/index.md",
 		"createdAt": "2024-04-08"
 	},
 	{
 		"slug": "my-jaggler-v",
 		"title": "マイジャグラーV",
-		"path": "etc/my-jaggler-v/index.md",
+		"path": "slot/my-jaggler-v/index.md",
 		"createdAt": "2024-04-09"
 	}
 ]
