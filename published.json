@@ -76,5 +76,11 @@
 		"title": "ファンキージャグラー2について",
 		"path": "etc/fanky-jaggler2/index.md",
 		"createdAt": "2024-04-08"
+	},
+	{
+		"slug": "happy-jaggler-v3",
+		"title": "ハッピージャグラーVⅢ",
+		"path": "etc/happy-jaggler-v3/index.md",
+		"createdAt": "2024-04-08"
 	}
 ]
