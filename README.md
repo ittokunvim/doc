@@ -31,6 +31,7 @@
 1. [ファンキージャグラー2](slot/fanky-jaggler2/index.md)
 2. [ハッピージャグラーVⅢ](slot/happy-jaggler-v3/index.md)
 3. [マイジャグラーV](slot/my-jaggler-v/index.md)
+4. [ハッピージャグラーVⅢの中押しガイド](slot/happy-nakaoshi/index.md)
 
 **etc**
 
