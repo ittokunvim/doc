@@ -32,7 +32,7 @@
 2. [ハッピージャグラーVⅢ | 設定判別](slot/happy-jaggler-v3/index.md)
 3. [マイジャグラーV | 設定判別](slot/my-jaggler-v/index.md)
 4. [ハッピージャグラーVⅢ | 中押しガイド](slot/happy-nakaoshi/index.md)
-5. [ダンまち2 | 1枚役](slot/danmachi2-1maiyaku/index.md)
+5. [ダンまち2 | 1枚役について](slot/danmachi2-1maiyaku/index.md)
 
 **etc**
 
