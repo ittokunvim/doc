@@ -1,59 +1,5 @@
 [
 	{
-		"slug": "mastering-tcpip-chapter1",
-		"title": "Mastering TCP/IP 第1章",
-		"path": "mastering-tcp-ip/chapter1/index.md",
-		"createdAt": "2021-12-12"
-	},
-	{
-		"slug": "mastering-tcpip-chapter2",
-		"title": "Mastering TCP/IP 第2章",
-		"path": "mastering-tcp-ip/chapter2/index.md",
-		"createdAt": "2021-12-16"
-	},
-	{
-		"slug": "mastering-tcpip-chapter3",
-		"title": "Mastering TCP/IP 第3章",
-		"path": "mastering-tcp-ip/chapter3/index.md",
-		"createdAt": "2021-12-22"
-	},
-	{
-		"slug": "mastering-tcpip-chapter4",
-		"title": "Mastering TCP/IP 第4章",
-		"path": "mastering-tcp-ip/chapter4/index.md",
-		"createdAt": "2021-12-28"
-	},
-	{
-		"slug": "mastering-tcpip-chapter5",
-		"title": "Mastering TCP/IP 第5章",
-		"path": "mastering-tcp-ip/chapter5/index.md",
-		"createdAt": "2022-01-10"
-	},
-	{
-		"slug": "mastering-tcpip-chapter6",
-		"title": "Mastering TCP/IP 第6章",
-		"path": "mastering-tcp-ip/chapter6/index.md",
-		"createdAt": "2022-01-12"
-	},
-	{
-		"slug": "readable-code-part1",
-		"title": "Readable Code 第1部",
-		"path": "readable-code/part1.md",
-		"createdAt": "2021-12-01"
-	},
-	{
-		"slug": "readable-code-part2",
-		"title": "Readable Code 第2部",
-		"path": "readable-code/part2.md",
-		"createdAt": "2021-12-01"
-	},
-	{
-		"slug": "readable-code-part3",
-		"title": "Readable Code 第3部",
-		"path": "readable-code/part3.md",
-		"createdAt": "2021-12-14"
-	},
-	{
 		"slug": "tech-regexp",
 		"title": "正規表現についてまとめてみた",
 		"path": "tech/regexp/index.md",
