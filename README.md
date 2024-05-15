@@ -1,8 +1,10 @@
-# markdown
+# portfolio docs
 
-このリポジトリは、自分が書いたマークダウンファイルの保管場所です
+このリポジトリには、公開するドキュメントが保存されています。
 
-また、公開するマークダウンファイルは[published.json](published.json)にまとめています。
+JSON: [data.json](data.json)
+
+WebSite: https://docs.ittokunvim.net/
 
 ## 目次
 
