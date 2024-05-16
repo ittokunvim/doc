@@ -6,12 +6,6 @@
 		"createdAt": "2024-03-06"
 	},
 	{
-		"slug": "etc-markdown-example",
-		"title": "マークダウンの例",
-		"path": "etc/markdown_example.md",
-		"createdAt": "2024-03-12"
-	},
-	{
 		"slug": "tech-fontawesome-nextjs-big-icon",
 		"title": "Next.jsでFontAwesomeを使用する際にアイコンが巨大化する現象と解決方法",
 		"path": "tech/fontawesome-nextjs-big-icon/index.md",
