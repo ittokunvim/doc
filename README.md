@@ -21,3 +21,4 @@ WebSite: https://docs.ittokunvim.net/
 4. [ハッピージャグラーVⅢ | 中押しガイド](slot/happy-nakaoshi/index.md)
 5. [ダンまち2 | 1枚役について](slot/danmachi2-1maiyaku/index.md)
 6. [L戦国乙女4 戦乱に閃く炯眼の軍師 | 設定判別](slot/sengokuotome4/index.md)
+7. [パチスロ からくりサーカス | 設定判別](slot/karakuri-settei/index.md)
