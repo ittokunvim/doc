@@ -52,5 +52,11 @@
 		"title": "パチスロ からくりサーカス | 設定判別",
 		"path": "slot/karakuri-settei/index.md",
 		"createdAt": "2024-06-11"
+	},
+	{
+		"slug": "karakuri-kaiseki",
+		"title": "パチスロ からくりサーカス | 機種解析",
+		"path": "slot/karakuri-kaiseki/index.md",
+		"createdAt": "2024-06-19"
 	}
 ]
