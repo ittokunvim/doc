@@ -1,10 +1,10 @@
-# portfolio docs
+# docs
 
-このリポジトリには、公開するドキュメントが保存されています。
+このリポジトリには、私が作成した色々なドキュメントが保存されています。
+
+また公開するドキュメントを`data.json`にまとめています。
 
 JSON: [data.json](data.json)
-
-WebSite: https://docs.ittokunvim.net/
 
 ## 目次
 
