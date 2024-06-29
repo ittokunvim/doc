@@ -23,3 +23,4 @@ WebSite: https://docs.ittokunvim.net/
 6. [L戦国乙女4 戦乱に閃く炯眼の軍師 | 設定判別](slot/sengokuotome4-settei/index.md)
 7. [パチスロ からくりサーカス | 設定判別](slot/karakuri-settei/index.md)
 8. [パチスロ からくりサーカス | 機種解析](slot/karakuri-kaiseki/index.md)
+6. [L戦国乙女4 戦乱に閃く炯眼の軍師 | 機種解析](slot/sengokuotome4-kaiseki/index.md)

@@ -58,5 +58,11 @@
 		"title": "パチスロ からくりサーカス | 機種解析",
 		"path": "slot/karakuri-kaiseki/index.md",
 		"createdAt": "2024-06-19"
+	},
+	{
+		"slug": "sengokuotome4-kaiseki",
+		"title": "L戦国乙女4 戦乱に閃く炯眼の軍師 | 機種解析",
+		"path": "slot/sengokuotome4-kaiseki/index.md",
+		"createdAt": "2024-06-30"
 	}
 ]
