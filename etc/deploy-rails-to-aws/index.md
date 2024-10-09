@@ -1,10 +1,8 @@
-# ruby on railsをAWSにデプロイ
+# Ruby on RailsをAWSにデプロイする
 
-> 目標：
->
-> mizusirazu.netのサイトをAWSへデプロイして、ブラウザで`mizusirazu.net`でアクセスできるようにすること
->
-> 参考：https://pikawaka.com/rails/ec2_deploy
+この記事では、`mizusirazu.net`(Ruby on Rails)をAWSへデプロイする方法についてまとめられています。
+
+参考：https://pikawaka.com/rails/ec2_deploy
 
 ## 大きな流れ
 
@@ -364,4 +362,3 @@ sudo systemctl reload nginx
 sudo systemctl start nginx
 unicorn_rails -c config/unicorn.rb -E production -D
 ```
-

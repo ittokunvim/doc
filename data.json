@@ -70,5 +70,17 @@
 		"title": "【Bevyでゲーム作り】BevyとLDtkで2Dゲームを作る",
 		"path": "tech/bevy-ldtk-setup/index.md",
 		"createdAt": "2024-10-02"
+	},
+	{
+		"slug": "deploy-rails-to-aws",
+		"title": "Ruby on RailsをAWSにデプロイする",
+		"path": "etc/deploy-rails-to-aws/index.md",
+		"createdAt": "2022-10-08"
+	},
+	{
+		"slug": "ruby-variables",
+		"title": "Ruby組み込み変数リスト",
+		"path": "tech/ruby-variables/index.md",
+		"createdAt": "2022-10-09"
 	}
 ]

@@ -28,4 +28,4 @@ JSON: [data.json](data.json)
 ### etc
 
 1. [AWSにRuby on Railsをデプロイする方法](etc/deploy-rails-to-aws/index.md)
-2. [Ruby組み込み変数](etc/ruby_variables/index.md)
+2. [Ruby組み込み変数](etc/ruby-variables/index.md)
