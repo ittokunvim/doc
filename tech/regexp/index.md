@@ -4,11 +4,11 @@
 
 そこで今までどうなっているのかわからずネットに記載されている正規表現を使ってきたが、今こそこの流れを断ち切って、この記事を通して正規表現マスターになろうと思う。
 
+この記事では謎の正規表現についてまとめられています。
+
 この記事を作成するにあったて参考にしたサイト、URLは以下の通り。
 
-> - https://www.secuavail.com/kb/practical-post/regex-introduction/
-
-では早速やっていきましょう！
+https://www.secuavail.com/kb/practical-post/regex-introduction/
 
 ## メタ文字とその用途
 

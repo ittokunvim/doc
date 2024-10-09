@@ -2,84 +2,98 @@
 	{
 		"slug": "tech-regexp",
 		"title": "正規表現についてまとめてみた",
+		"description": "この記事では謎の正規表現についてまとめられています",
 		"path": "tech/regexp/index.md",
 		"createdAt": "2024-03-06"
 	},
 	{
 		"slug": "tech-fontawesome-nextjs-big-icon",
 		"title": "Next.jsでFontAwesomeを使用する際にアイコンが巨大化する現象と解決方法",
+		"description": "この記事では、NextjsでFontAwesomeを使用した際にアイコンが巨大化した原因と、解決方法が書かれています",
 		"path": "tech/fontawesome-nextjs-big-icon/index.md",
 		"createdAt": "2024-03-27"
 	},
 	{
 		"slug": "fanky-jaggler2",
 		"title": "ファンキージャグラー2 | 設定判別",
+		"description": "ここではファンキージャグラー2の設定推測に役立つ数値についてまとめています",
 		"path": "slot/fanky-jaggler2/index.md",
 		"createdAt": "2024-04-08"
 	},
 	{
 		"slug": "happy-jaggler-v3",
 		"title": "ハッピージャグラーVⅢ | 設定判別",
+		"description": "ここではハッピージャグラーVⅢの設定推測に役立つ数値についてまとめています",
 		"path": "slot/happy-jaggler-v3/index.md",
 		"createdAt": "2024-04-08"
 	},
 	{
 		"slug": "my-jaggler-v",
 		"title": "マイジャグラーV | 設定判別",
+		"description": "ここでは、マイジャグラーVの設定推測に役立つ数値についてまとめられています",
 		"path": "slot/my-jaggler-v/index.md",
 		"createdAt": "2024-04-09"
 	},
 	{
 		"slug": "happy-nakaoshi",
 		"title": "ハッピージャグラーVⅢ | 中押しガイド",
+		"description": "ここではハッピージャグラーVⅢの中リール上段赤7狙いについてまとめられています",
 		"path": "slot/happy-nakaoshi/index.md",
 		"createdAt": "2024-04-10"
 	},
 	{
 		"slug": "danmachi2-1maiyaku",
 		"title": "ダンまち2 | 1枚役について",
+		"description": "ここでは「パチスロ ダンジョンに出会いを求めるのは間違っているだろうか2」の1枚役について解説しています",
 		"path": "slot/danmachi2-1maiyaku/index.md",
 		"createdAt": "2024-05-10"
 	},
 	{
 		"slug": "sengokuotome4",
 		"title": "L戦国乙女4 戦乱に閃く炯眼の軍師 | 設定判別",
+		"description": "ここでは戦国乙女4の設定推測に役立つ数値についてまとめています",
 		"path": "slot/sengokuotome4-settei/index.md",
 		"createdAt": "2024-06-09"
 	},
 	{
 		"slug": "karakuri-settei",
 		"title": "パチスロ からくりサーカス | 設定判別",
+		"description": "ここでは「パチスロ　からくりサーカス」の設定推測に役立つ数値をまとめています",
 		"path": "slot/karakuri-settei/index.md",
 		"createdAt": "2024-06-11"
 	},
 	{
 		"slug": "karakuri-kaiseki",
 		"title": "パチスロ からくりサーカス | 機種解析",
+		"description": "ここでは「パチスロ　からくりサーカス」の解析情報をまとめています",
 		"path": "slot/karakuri-kaiseki/index.md",
 		"createdAt": "2024-06-19"
 	},
 	{
 		"slug": "sengokuotome4-kaiseki",
 		"title": "L戦国乙女4 戦乱に閃く炯眼の軍師 | 機種解析",
+		"description": "ここでは戦国乙女4の解析情報についてまとめています",
 		"path": "slot/sengokuotome4-kaiseki/index.md",
 		"createdAt": "2024-06-30"
 	},
 	{
 		"slug": "bevy-ldtk-setup",
 		"title": "【Bevyでゲーム作り】BevyとLDtkで2Dゲームを作る",
+		"description": "この記事ではBevyと、LDtkを組み合わせたゲームの作り方について解説しています",
 		"path": "tech/bevy-ldtk-setup/index.md",
 		"createdAt": "2024-10-02"
 	},
 	{
 		"slug": "deploy-rails-to-aws",
 		"title": "Ruby on RailsをAWSにデプロイする",
+		"description": "この記事では、`mizusirazu.net`(Ruby on Rails)をAWSへデプロイする方法についてまとめられています ",
 		"path": "etc/deploy-rails-to-aws/index.md",
 		"createdAt": "2022-10-08"
 	},
 	{
 		"slug": "ruby-variables",
 		"title": "Ruby組み込み変数リスト",
+		"description": "ここではプログラミング言語Rubyの組み込み変数のリストが書かれています",
 		"path": "tech/ruby-variables/index.md",
 		"createdAt": "2022-10-09"
 	}
