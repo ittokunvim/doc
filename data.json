@@ -86,7 +86,7 @@
 	{
 		"slug": "deploy-rails-to-aws",
 		"title": "Ruby on RailsをAWSにデプロイする",
-		"description": "この記事では、`mizusirazu.net`(Ruby on Rails)をAWSへデプロイする方法についてまとめられています ",
+		"description": "この記事では、`mizusirazu.net`(Ruby on Rails)をAWSへデプロイする方法についてまとめられています",
 		"path": "etc/deploy-rails-to-aws/index.md",
 		"createdAt": "2022-10-08"
 	},
@@ -94,7 +94,7 @@
 		"slug": "ruby-variables",
 		"title": "Ruby組み込み変数リスト",
 		"description": "ここではプログラミング言語Rubyの組み込み変数のリストが書かれています",
-		"path": "tech/ruby-variables/index.md",
+		"path": "etc/ruby-variables/index.md",
 		"createdAt": "2022-10-09"
 	}
 ]
