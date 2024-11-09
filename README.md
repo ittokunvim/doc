@@ -47,6 +47,7 @@ JSON: [data.json](data.json)
 8.  [パチスロ からくりサーカス | 機種解析](slot/karakuri-kaiseki/index.md)
 9.  [L戦国乙女4 戦乱に閃く炯眼の軍師 | 機種解析](slot/sengokuotome4-kaiseki/index.md)
 10. [ハイパーラッシュ | 解析、設定](slot/hyper-rush/index.md)
+11. [グランベルム | 解析、設定](slot/granbelm/index.md)
 
 ### etc
 

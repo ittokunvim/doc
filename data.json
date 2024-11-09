@@ -103,5 +103,12 @@
 		"description": "ここではハイパーラッシュの機種解析と設定判別などがまとめられています",
 		"path": "slot/hyper-rush/index.md",
 		"createdAt": "2024-10-13"
+	},
+	{
+		"slug": "granbelm",
+		"title": "グランベルム | 解析、設定",
+		"description": "ここではグランベルムの機種解析と設定判別などがまとめられています",
+		"path": "slot/granbelm/index.md",
+		"createdAt": "2024-11-09"
 	}
 ]
