@@ -110,5 +110,12 @@
 		"description": "ここではグランベルムの機種解析と設定判別などがまとめられています",
 		"path": "slot/granbelm/index.md",
 		"createdAt": "2024-11-09"
+	},
+	{
+		"slug": "granbelm-settei",
+		"title": "グランベルム | 設定推測",
+		"description": "この記事では「回胴式遊技機グランベルム」の設定推測について書かれています",
+		"path": "slot/granbelm-settei/index.md",
+		"createdAt": "2024-11-17"
 	}
 ]
