@@ -117,5 +117,12 @@
 		"description": "この記事では「回胴式遊技機グランベルム」の設定推測について書かれています",
 		"path": "slot/granbelm-settei/index.md",
 		"createdAt": "2024-11-17"
+	},
+	{
+		"slug": "granbelm-tuujou",
+		"title": "グランベルム | 通常時解析",
+		"description": "ここでは「回胴式遊技機グランベルム」の通常時の解析について書かれています",
+		"path": "slot/granbelm-tuujou/index.md",
+		"createdAt": "2024-11-17"
 	}
 ]

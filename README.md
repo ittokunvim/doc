@@ -49,6 +49,7 @@ JSON: [data.json](data.json)
 10. [ハイパーラッシュ | 解析、設定](slot/hyper-rush/index.md)
 11. [グランベルム | 解析、設定](slot/granbelm/index.md)
 12. [グランベルム | 設定推測](slot/granbelm-settei/index.md)
+12. [グランベルム | 通常時解析](slot/granbelm-tuujou/index.md)
 
 ### etc
 
