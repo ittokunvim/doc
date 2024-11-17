@@ -437,3 +437,17 @@ AT引き戻し前兆のステージ。
 
 規定ゲーム数やチャンスゾーンの演出バランスも非常に良く、
 退屈な通常時もそこそこ楽しく打てるようになっているのがよく作り込まれているなと思う。
+
+## 参考サイト
+
+本家サイト
+
+https://kitac-granbelm.jp/
+
+リール画像
+
+https://p-town.dmm.com/machines/4406
+
+解析情報
+
+https://chonborista.com/slot/kitadenshi/190519/

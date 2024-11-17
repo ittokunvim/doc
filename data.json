@@ -105,13 +105,6 @@
 		"createdAt": "2024-10-13"
 	},
 	{
-		"slug": "granbelm",
-		"title": "グランベルム | 解析、設定",
-		"description": "ここではグランベルムの機種解析と設定判別などがまとめられています",
-		"path": "slot/granbelm/index.md",
-		"createdAt": "2024-11-09"
-	},
-	{
 		"slug": "granbelm-settei",
 		"title": "グランベルム | 設定推測",
 		"description": "この記事では「回胴式遊技機グランベルム」の設定推測について書かれています",
@@ -123,6 +116,13 @@
 		"title": "グランベルム | 通常時解析",
 		"description": "ここでは「回胴式遊技機グランベルム」の通常時の解析について書かれています",
 		"path": "slot/granbelm-tuujou/index.md",
+		"createdAt": "2024-11-17"
+	},
+	{
+		"slug": "granbelm-at",
+		"title": "グランベルム | AT時解析",
+		"description": "ここでは「回胴式遊技機グランベルム」のAT時の解析について書かれています",
+		"path": "slot/granbelm-at/index.md",
 		"createdAt": "2024-11-17"
 	}
 ]
