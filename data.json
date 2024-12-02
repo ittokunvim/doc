@@ -124,5 +124,12 @@
 		"description": "ここでは「回胴式遊技機グランベルム」のAT時の解析について書かれています",
 		"path": "slot/granbelm-at/index.md",
 		"createdAt": "2024-11-17"
+	},
+	{
+		"slug": "bevy-setup",
+		"title": "ゲームエンジンBevyのセットアップ方法",
+		"description": "この記事ではゲームエンジンBevyのセットアップ方法について書かれています",
+		"path": "tech/bevy-setup/index.md",
+		"createdAt": "2024-12-03"
 	}
 ]

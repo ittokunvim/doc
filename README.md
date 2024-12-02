@@ -34,6 +34,7 @@ JSON: [data.json](data.json)
 
 1. [regexp](tech/regexp/index.md)
 2. [fontawesome-nextjs-big-icon](tech/fontawesome-nextjs-big-icon/index.md)
+3. [ゲームエンジンBevyのセットアップ方法](tech/bevy-setup/index.md)
 
 ### slot
 
