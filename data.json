@@ -14,6 +14,20 @@
 		"createdAt": "2024-03-27"
 	},
 	{
+		"slug": "bevy-setup",
+		"title": "ゲームエンジンBevyのセットアップ方法",
+		"description": "この記事ではゲームエンジンBevyのセットアップ方法について書かれています",
+		"path": "tech/bevy-setup/index.md",
+		"createdAt": "2024-12-03"
+	},
+		{
+		"slug": "bevy-ldtk-setup",
+		"title": "【Bevyでゲーム作り】BevyとLDtkで2Dゲームを作る",
+		"description": "この記事ではBevyと、LDtkを組み合わせたゲームの作り方について解説しています",
+		"path": "tech/bevy-ldtk-setup/index.md",
+		"createdAt": "2024-10-02"
+	},
+	{
 		"slug": "fanky-jaggler2",
 		"title": "ファンキージャグラー2 | 設定判別",
 		"description": "ここではファンキージャグラー2の設定推測に役立つ数値についてまとめています",
@@ -77,27 +91,6 @@
 		"createdAt": "2024-06-30"
 	},
 	{
-		"slug": "bevy-ldtk-setup",
-		"title": "【Bevyでゲーム作り】BevyとLDtkで2Dゲームを作る",
-		"description": "この記事ではBevyと、LDtkを組み合わせたゲームの作り方について解説しています",
-		"path": "tech/bevy-ldtk-setup/index.md",
-		"createdAt": "2024-10-02"
-	},
-	{
-		"slug": "deploy-rails-to-aws",
-		"title": "Ruby on RailsをAWSにデプロイする",
-		"description": "この記事では、`mizusirazu.net`(Ruby on Rails)をAWSへデプロイする方法についてまとめられています",
-		"path": "etc/deploy-rails-to-aws/index.md",
-		"createdAt": "2022-10-08"
-	},
-	{
-		"slug": "ruby-variables",
-		"title": "Ruby組み込み変数リスト",
-		"description": "ここではプログラミング言語Rubyの組み込み変数のリストが書かれています",
-		"path": "etc/ruby-variables/index.md",
-		"createdAt": "2022-10-09"
-	},
-	{
 		"slug": "hyper-rush",
 		"title": "ハイパーラッシュ | 解析、設定",
 		"description": "ここではハイパーラッシュの機種解析と設定判別などがまとめられています",
@@ -107,7 +100,6 @@
 	{
 		"slug": "granbelm-settei",
 		"title": "グランベルム | 設定推測",
-		"description": "この記事では「回胴式遊技機グランベルム」の設定推測について書かれています",
 		"path": "slot/granbelm-settei/index.md",
 		"createdAt": "2024-11-17"
 	},
@@ -126,10 +118,17 @@
 		"createdAt": "2024-11-17"
 	},
 	{
-		"slug": "bevy-setup",
-		"title": "ゲームエンジンBevyのセットアップ方法",
-		"description": "この記事ではゲームエンジンBevyのセットアップ方法について書かれています",
-		"path": "tech/bevy-setup/index.md",
-		"createdAt": "2024-12-03"
+		"slug": "deploy-rails-to-aws",
+		"title": "Ruby on RailsをAWSにデプロイする",
+		"description": "この記事では、`mizusirazu.net`(Ruby on Rails)をAWSへデプロイする方法についてまとめられています",
+		"path": "etc/deploy-rails-to-aws/index.md",
+		"createdAt": "2022-10-08"
+	},
+	{
+		"slug": "ruby-variables",
+		"title": "Ruby組み込み変数リスト",
+		"description": "ここではプログラミング言語Rubyの組み込み変数のリストが書かれています",
+		"path": "etc/ruby-variables/index.md",
+		"createdAt": "2022-10-09"
 	}
 ]
