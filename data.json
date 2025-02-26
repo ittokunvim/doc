@@ -63,61 +63,6 @@
 		"createdAt": "2024-05-10"
 	},
 	{
-		"slug": "sengokuotome4",
-		"title": "L戦国乙女4 戦乱に閃く炯眼の軍師 | 設定判別",
-		"description": "ここでは戦国乙女4の設定推測に役立つ数値についてまとめています",
-		"path": "slot/sengokuotome4-settei/index.md",
-		"createdAt": "2024-06-09"
-	},
-	{
-		"slug": "karakuri-settei",
-		"title": "パチスロ からくりサーカス | 設定判別",
-		"description": "ここでは「パチスロ　からくりサーカス」の設定推測に役立つ数値をまとめています",
-		"path": "slot/karakuri-settei/index.md",
-		"createdAt": "2024-06-11"
-	},
-	{
-		"slug": "karakuri-kaiseki",
-		"title": "パチスロ からくりサーカス | 機種解析",
-		"description": "ここでは「パチスロ　からくりサーカス」の解析情報をまとめています",
-		"path": "slot/karakuri-kaiseki/index.md",
-		"createdAt": "2024-06-19"
-	},
-	{
-		"slug": "sengokuotome4-kaiseki",
-		"title": "L戦国乙女4 戦乱に閃く炯眼の軍師 | 機種解析",
-		"description": "ここでは戦国乙女4の解析情報についてまとめています",
-		"path": "slot/sengokuotome4-kaiseki/index.md",
-		"createdAt": "2024-06-30"
-	},
-	{
-		"slug": "hyper-rush",
-		"title": "ハイパーラッシュ | 解析、設定",
-		"description": "ここではハイパーラッシュの機種解析と設定判別などがまとめられています",
-		"path": "slot/hyper-rush/index.md",
-		"createdAt": "2024-10-13"
-	},
-	{
-		"slug": "granbelm-settei",
-		"title": "グランベルム | 設定推測",
-		"path": "slot/granbelm-settei/index.md",
-		"createdAt": "2024-11-17"
-	},
-	{
-		"slug": "granbelm-tuujou",
-		"title": "グランベルム | 通常時解析",
-		"description": "ここでは「回胴式遊技機グランベルム」の通常時の解析について書かれています",
-		"path": "slot/granbelm-tuujou/index.md",
-		"createdAt": "2024-11-17"
-	},
-	{
-		"slug": "granbelm-at",
-		"title": "グランベルム | AT時解析",
-		"description": "ここでは「回胴式遊技機グランベルム」のAT時の解析について書かれています",
-		"path": "slot/granbelm-at/index.md",
-		"createdAt": "2024-11-17"
-	},
-	{
 		"slug": "deploy-rails-to-aws",
 		"title": "Ruby on RailsをAWSにデプロイする",
 		"description": "この記事では、`mizusirazu.net`(Ruby on Rails)をAWSへデプロイする方法についてまとめられています",
