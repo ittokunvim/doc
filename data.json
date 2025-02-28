@@ -25,7 +25,8 @@
 		"title": "【Bevyでゲーム作り】BevyとLDtkで2Dゲームを作る",
 		"description": "この記事ではBevyと、LDtkを組み合わせたゲームの作り方について解説しています",
 		"path": "tech/bevy-ldtk-setup/index.md",
-		"createdAt": "2024-10-02"
+		"createdAt": "2024-10-02",
+		"updatedAt": "2025-03-01"
 	},
 	{
 		"slug": "fanky-jaggler2",
