@@ -70,12 +70,5 @@
 		"description": "ここでは「パチスロ ダンジョンに出会いを求めるのは間違っているだろうか2」の1枚役について解説しています",
 		"path": "slot/danmachi2-1maiyaku/index.md",
 		"createdAt": "2024-05-10"
-	},
-	{
-		"slug": "deploy-rails-to-aws",
-		"title": "Ruby on RailsをAWSにデプロイする",
-		"description": "この記事では、`mizusirazu.net`(Ruby on Rails)をAWSへデプロイする方法についてまとめられています",
-		"path": "etc/deploy-rails-to-aws/index.md",
-		"createdAt": "2022-10-08"
 	}
 ]

@@ -37,6 +37,7 @@ JSON: [data.json](data.json)
 3. [ゲームエンジンBevyのセットアップ方法](tech/bevy-setup/index.md)
 4. [【Bevyでゲーム作り】BevyとLDtkで2Dゲームを作る](tech/bevy-ldtk-setup/index.md)
 5. [Rubyの組み込み変数まとめ](etc/ruby-variables/index.md)
+6. [AWSにRuby on Railsをデプロイする方法](etc/deploy-rails-to-aws/index.md)
 
 ### slot
 
@@ -54,6 +55,3 @@ JSON: [data.json](data.json)
 12. [グランベルム | 通常時解析](slot/granbelm-tuujou/index.md)
 13. [グランベルム | AT時解析](slot/granbelm-at/index.md)
 
-### etc
-
-1. [AWSにRuby on Railsをデプロイする方法](etc/deploy-rails-to-aws/index.md)
