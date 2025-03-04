@@ -4,21 +4,24 @@
 		"title": "正規表現についてまとめてみた",
 		"description": "この記事では謎の正規表現についてまとめられています",
 		"path": "tech/regexp/index.md",
-		"createdAt": "2024-03-06"
+		"createdAt": "2024-03-06",
+		"updatedAt": "2024-03-06"
 	},
 	{
 		"slug": "tech-fontawesome-nextjs-big-icon",
 		"title": "Next.jsでFontAwesomeを使用する際にアイコンが巨大化する現象と解決方法",
 		"description": "この記事では、NextjsでFontAwesomeを使用した際にアイコンが巨大化した原因と、解決方法が書かれています",
 		"path": "tech/fontawesome-nextjs-big-icon/index.md",
-		"createdAt": "2024-03-27"
+		"createdAt": "2024-03-27",
+		"updatedAt": "2024-03-27"
 	},
 	{
 		"slug": "bevy-setup",
 		"title": "ゲームエンジンBevyのセットアップ方法",
 		"description": "この記事ではゲームエンジンBevyのセットアップ方法について書かれています",
 		"path": "tech/bevy-setup/index.md",
-		"createdAt": "2024-12-03"
+		"createdAt": "2024-12-03",
+		"updatedAt": "2024-12-03"
 	},
 		{
 		"slug": "bevy-ldtk-setup",
@@ -41,34 +44,39 @@
 		"title": "ファンキージャグラー2 | 設定判別",
 		"description": "ここではファンキージャグラー2の設定推測に役立つ数値についてまとめています",
 		"path": "slot/fanky-jaggler2/index.md",
-		"createdAt": "2024-04-08"
+		"createdAt": "2024-04-08",
+		"updatedAt": "2024-04-08"
 	},
 	{
 		"slug": "happy-jaggler-v3",
 		"title": "ハッピージャグラーVⅢ | 設定判別",
 		"description": "ここではハッピージャグラーVⅢの設定推測に役立つ数値についてまとめています",
 		"path": "slot/happy-jaggler-v3/index.md",
-		"createdAt": "2024-04-08"
+		"createdAt": "2024-04-08",
+		"updatedAt": "2024-04-08"
 	},
 	{
 		"slug": "my-jaggler-v",
 		"title": "マイジャグラーV | 設定判別",
 		"description": "ここでは、マイジャグラーVの設定推測に役立つ数値についてまとめられています",
 		"path": "slot/my-jaggler-v/index.md",
-		"createdAt": "2024-04-09"
+		"createdAt": "2024-04-09",
+		"updatedAt": "2024-04-09"
 	},
 	{
 		"slug": "happy-nakaoshi",
 		"title": "ハッピージャグラーVⅢ | 中押しガイド",
 		"description": "ここではハッピージャグラーVⅢの中リール上段赤7狙いについてまとめられています",
 		"path": "slot/happy-nakaoshi/index.md",
-		"createdAt": "2024-04-10"
+		"createdAt": "2024-04-10",
+		"updatedAt": "2024-04-10"
 	},
 	{
 		"slug": "danmachi2-1maiyaku",
 		"title": "ダンまち2 | 1枚役について",
 		"description": "ここでは「パチスロ ダンジョンに出会いを求めるのは間違っているだろうか2」の1枚役について解説しています",
 		"path": "slot/danmachi2-1maiyaku/index.md",
-		"createdAt": "2024-05-10"
+		"createdAt": "2024-05-10",
+		"updatedAt": "2024-05-10"
 	}
 ]

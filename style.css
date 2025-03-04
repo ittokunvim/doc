@@ -47,23 +47,36 @@ hr {
 }
 
 #docs .item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 128px;
 	padding: 0.25em;
 	border: 1px solid var(--color-border-primary);
 }
 
 #docs .item a {
+	display: -webkit-box;
 	font-size: 0.9em;
 	color: var(--color-text-link);
 	text-decoration: none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
 }
 
 #docs .item a:hover {
 	text-decoration: underline;
 }
 
-#docs .item p {
-	font-size: 0.8em;
+#docs .item .date {
+	font-size: 0.75em;
 	color: var(--color-text-secondary);
+}
+
+#docs .item .date p {
+	margin: 0;
 }
 
 .copyright {

@@ -9,6 +9,7 @@ const DocsTitle = "ドキュメント一覧";
 //  "title": "string",
 //  "path": "string",
 //  "createdAt": "string"
+//  "updatedAt": "string"
 // }
 
 async function fetchJson() {
@@ -16,10 +17,15 @@ async function fetchJson() {
 		const response = await fetch(JsonPath, { cache: "no-store" });
 		const data = await response.json();
 		data.sort((a, b) => {
-			return a.createdAt < b.createdAt ? 1 : -1;
+			if (a.updatedAt === b.updatedAt) {
+				return a.createdAt < b.createdAt ? 1 : -1;
+			} else {
+				return a.updatedAt < b.updatedAt ? 1 : -1;
+			}
 		});
 		data.forEach((doc) => {
 			doc.createdAt = formatDate(doc.createdAt);
+			doc.updatedAt = formatDate(doc.updatedAt);
 		});
 		return data;
 	} catch (error) {
@@ -46,12 +52,19 @@ async function createDocList() {
 	jsonData.forEach((data) => {
 		const myDocsItem = document.createElement("div");
 		const myItemLink = document.createElement("a");
-		const myItemDate = document.createElement("p");
+		const myItemDate = document.createElement("div");
+		const myItemCreatedAt = document.createElement("p");
+		const myItemUpdatedAt = document.createElement("p");
 
 		myDocsItem.classList.add("item");
+		myItemDate.classList.add("date");
 		myItemLink.textContent = data.title;
 		myItemLink.href = data.path.replace("index.md", "");
-		myItemDate.textContent = data.createdAt;
+		myItemCreatedAt.textContent = `作成: ${data.createdAt}`;
+		myItemUpdatedAt.textContent = `更新: ${data.updatedAt}`;
+
+		myItemDate.appendChild(myItemCreatedAt);
+		myItemDate.appendChild(myItemUpdatedAt);
 
 		myDocsItem.appendChild(myItemLink);
 		myDocsItem.appendChild(myItemDate);
