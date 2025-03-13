@@ -40,6 +40,14 @@
 		"updatedAt": "2025-03-03"
 	},
 	{
+		"slug": "bevy-timing-game",
+		"title": "Bevyでタイミングゲームを作る",
+		"description": "この記事では、Rust製のBevyを使ったタイミングゲームの作り方について説明しています",
+		"path": "tech/bevy-timing-game/index.md",
+		"createdAt": "2023-06-19",
+		"updatedAt": "2025-03-13"
+	},
+	{
 		"slug": "fanky-jaggler2",
 		"title": "ファンキージャグラー2 | 設定判別",
 		"description": "ここではファンキージャグラー2の設定推測に役立つ数値についてまとめています",
