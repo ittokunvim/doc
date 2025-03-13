@@ -36,8 +36,9 @@ JSON: [data.json](data.json)
 2. [fontawesome-nextjs-big-icon](tech/fontawesome-nextjs-big-icon/index.md)
 3. [ゲームエンジンBevyのセットアップ方法](tech/bevy-setup/index.md)
 4. [【Bevyでゲーム作り】BevyとLDtkで2Dゲームを作る](tech/bevy-ldtk-setup/index.md)
-5. [Rubyの組み込み変数まとめ](etc/ruby-variables/index.md)
-6. [AWSにRuby on Railsをデプロイする方法](etc/deploy-rails-to-aws/index.md)
+5. [Rubyの組み込み変数まとめ](tech/ruby-variables/index.md)
+6. [AWSにRuby on Railsをデプロイする方法](tech/deploy-rails-to-aws/index.md)
+6. [Bevyでタイミングゲームを作る](tech/bevy-timing-game/index.md)
 
 ### slot
 
