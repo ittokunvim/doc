@@ -48,6 +48,14 @@
 		"updatedAt": "2025-03-13"
 	},
 	{
+		"slug": "bevy-tetris",
+		"title": "Bevyでテトリスを作る",
+		"description": "この記事では、Bevyを使ったテトリスの作り方について説明しています",
+		"path": "tech/bevy-tetris/index.md",
+		"createdAt": "2025-04-12",
+		"updatedAt": "2025-04-12"
+	},
+	{
 		"slug": "fanky-jaggler2",
 		"title": "ファンキージャグラー2 | 設定判別",
 		"description": "ここではファンキージャグラー2の設定推測に役立つ数値についてまとめています",

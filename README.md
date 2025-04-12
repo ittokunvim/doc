@@ -39,6 +39,7 @@ JSON: [data.json](data.json)
 5. [Rubyの組み込み変数まとめ](tech/ruby-variables/index.md)
 6. [AWSにRuby on Railsをデプロイする方法](tech/deploy-rails-to-aws/index.md)
 6. [Bevyでタイミングゲームを作る](tech/bevy-timing-game/index.md)
+6. [Bevyでテトリスを作る](tech/bevy-tetris/index.md)
 
 ### slot
 
