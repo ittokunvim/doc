@@ -94,5 +94,13 @@
 		"path": "slot/danmachi2-1maiyaku/index.md",
 		"createdAt": "2024-05-10",
 		"updatedAt": "2024-05-10"
+	},
+	{
+		"slug": "introduce",
+		"title": "自己紹介",
+		"description": "ここでは私の自己紹介について書かれています",
+		"path": "etc/introduce/index.md",
+		"createdAt": "2025-04-16",
+		"updatedAt": "2025-04-16"
 	}
 ]

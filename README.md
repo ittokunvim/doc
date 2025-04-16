@@ -57,3 +57,5 @@ JSON: [data.json](data.json)
 12. [グランベルム | 通常時解析](slot/granbelm-tuujou/index.md)
 13. [グランベルム | AT時解析](slot/granbelm-at/index.md)
 
+### etc
+1. [自己紹介](etc/introduce/index.md)
