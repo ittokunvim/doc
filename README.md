@@ -38,8 +38,9 @@ JSON: [data.json](data.json)
 4. [【Bevyでゲーム作り】BevyとLDtkで2Dゲームを作る](tech/bevy-ldtk-setup/index.md)
 5. [Rubyの組み込み変数まとめ](tech/ruby-variables/index.md)
 6. [AWSにRuby on Railsをデプロイする方法](tech/deploy-rails-to-aws/index.md)
-6. [Bevyでタイミングゲームを作る](tech/bevy-timing-game/index.md)
-6. [Bevyでテトリスを作る](tech/bevy-tetris/index.md)
+7. [Bevyでタイミングゲームを作る](tech/bevy-timing-game/index.md)
+8. [Bevyでテトリスを作る](tech/bevy-tetris/index.md)
+8. [エクセルの使い方](tech/excel-usage/index.md)
 
 ### slot
 
