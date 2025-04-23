@@ -8,6 +8,7 @@ const DocsTitle = "ドキュメント一覧";
 //  "slug": "string",
 //  "title": "string",
 //  "path": "string",
+//  "published": boolean,
 //  "createdAt": "string"
 //  "updatedAt": "string"
 // }

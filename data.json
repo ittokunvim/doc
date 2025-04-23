@@ -4,6 +4,7 @@
 		"title": "自己紹介",
 		"description": "ここでは私の自己紹介について書かれています",
 		"path": "etc/introduce/index.md",
+		"published": false,
 		"createdAt": "2025-04-16",
 		"updatedAt": "2025-04-16"
 	},
@@ -12,6 +13,7 @@
 		"title": "正規表現についてまとめてみた",
 		"description": "この記事では謎の正規表現についてまとめられています",
 		"path": "tech/regexp/index.md",
+		"published": true,
 		"createdAt": "2024-03-06",
 		"updatedAt": "2024-03-06"
 	},
@@ -20,6 +22,7 @@
 		"title": "Next.jsでFontAwesomeを使用する際にアイコンが巨大化する現象と解決方法",
 		"description": "この記事では、NextjsでFontAwesomeを使用した際にアイコンが巨大化した原因と、解決方法が書かれています",
 		"path": "tech/fontawesome-nextjs-big-icon/index.md",
+		"published": true,
 		"createdAt": "2024-03-27",
 		"updatedAt": "2024-03-27"
 	},
@@ -28,6 +31,7 @@
 		"title": "ゲームエンジンBevyのセットアップ方法",
 		"description": "この記事ではゲームエンジンBevyのセットアップ方法について書かれています",
 		"path": "tech/bevy-setup/index.md",
+		"published": true,
 		"createdAt": "2024-12-03",
 		"updatedAt": "2024-12-03"
 	},
@@ -36,6 +40,7 @@
 		"title": "【Bevyでゲーム作り】BevyとLDtkで2Dゲームを作る",
 		"description": "この記事ではBevyと、LDtkを組み合わせたゲームの作り方について解説しています",
 		"path": "tech/bevy-ldtk-setup/index.md",
+		"published": true,
 		"createdAt": "2024-10-02",
 		"updatedAt": "2025-03-01"
 	},
@@ -44,6 +49,7 @@
 		"title": "Rubyの組み込み変数まとめ",
 		"description": "この記事では、プログラミング言語Rubyの組み込み変数がまとめられています",
 		"path": "tech/ruby-variables/index.md",
+		"published": true,
 		"createdAt": "2022-10-09",
 		"updatedAt": "2025-03-03"
 	},
@@ -52,6 +58,7 @@
 		"title": "Bevyでタイミングゲームを作る",
 		"description": "この記事では、Rust製のBevyを使ったタイミングゲームの作り方について説明しています",
 		"path": "tech/bevy-timing-game/index.md",
+		"published": true,
 		"createdAt": "2023-06-19",
 		"updatedAt": "2025-03-13"
 	},
@@ -60,6 +67,7 @@
 		"title": "Bevyでテトリスを作る",
 		"description": "この記事では、Bevyを使ったテトリスの作り方について説明しています",
 		"path": "tech/bevy-tetris/index.md",
+		"published": true,
 		"createdAt": "2025-04-12",
 		"updatedAt": "2025-04-12"
 	},
@@ -68,6 +76,7 @@
 		"title": "エクセルの使い方",
 		"description": "ここでは私の学んだエクセルの使い方について書かれています",
 		"path": "tech/excel-usage/index.md",
+		"published": false,
 		"createdAt": "2025-04-23",
 		"updatedAt": "2025-04-23"
 	},
@@ -76,6 +85,7 @@
 		"title": "ファンキージャグラー2 | 設定判別",
 		"description": "ここではファンキージャグラー2の設定推測に役立つ数値についてまとめています",
 		"path": "slot/fanky-jaggler2/index.md",
+		"published": false,
 		"createdAt": "2024-04-08",
 		"updatedAt": "2024-04-08"
 	},
@@ -84,6 +94,7 @@
 		"title": "ハッピージャグラーVⅢ | 設定判別",
 		"description": "ここではハッピージャグラーVⅢの設定推測に役立つ数値についてまとめています",
 		"path": "slot/happy-jaggler-v3/index.md",
+		"published": false,
 		"createdAt": "2024-04-08",
 		"updatedAt": "2024-04-08"
 	},
@@ -92,6 +103,7 @@
 		"title": "マイジャグラーV | 設定判別",
 		"description": "ここでは、マイジャグラーVの設定推測に役立つ数値についてまとめられています",
 		"path": "slot/my-jaggler-v/index.md",
+		"published": false,
 		"createdAt": "2024-04-09",
 		"updatedAt": "2024-04-09"
 	},
@@ -100,6 +112,7 @@
 		"title": "ハッピージャグラーVⅢ | 中押しガイド",
 		"description": "ここではハッピージャグラーVⅢの中リール上段赤7狙いについてまとめられています",
 		"path": "slot/happy-nakaoshi/index.md",
+		"published": false,
 		"createdAt": "2024-04-10",
 		"updatedAt": "2024-04-10"
 	},
@@ -108,6 +121,7 @@
 		"title": "ダンまち2 | 1枚役について",
 		"description": "ここでは「パチスロ ダンジョンに出会いを求めるのは間違っているだろうか2」の1枚役について解説しています",
 		"path": "slot/danmachi2-1maiyaku/index.md",
+		"published": false,
 		"createdAt": "2024-05-10",
 		"updatedAt": "2024-05-10"
 	},
@@ -116,6 +130,7 @@
 		"title": "L戦国乙女4 戦乱に閃く炯眼の軍師 | 設定判別",
 		"description": "ここでは戦国乙女4の設定推測に役立つ数値についてまとめています",
 		"path": "slot/sengokuotome4-settei/index.md",
+		"published": false,
 		"createdAt": "2024-06-09",
 		"updatedAt": "2024-06-09"
 	},
@@ -124,6 +139,7 @@
 		"title": "パチスロ からくりサーカス | 設定判別",
 		"description": "ここでは「パチスロ　からくりサーカス」の設定推測に役立つ数値をまとめています",
 		"path": "slot/karakuri-settei/index.md",
+		"published": false,
 		"createdAt": "2024-06-11",
 		"updatedAt": "2024-06-11"
 	},
@@ -132,6 +148,7 @@
 		"title": "パチスロ からくりサーカス | 機種解析",
 		"description": "ここでは「パチスロ　からくりサーカス」の解析情報をまとめています",
 		"path": "slot/karakuri-kaiseki/index.md",
+		"published": false,
 		"createdAt": "2024-06-19",
 		"updatedAt": "2024-06-19"
 	},
@@ -140,6 +157,7 @@
 		"title": "L戦国乙女4 戦乱に閃く炯眼の軍師 | 機種解析",
 		"description": "ここでは戦国乙女4の解析情報についてまとめています",
 		"path": "slot/sengokuotome4-kaiseki/index.md",
+		"published": false,
 		"createdAt": "2024-06-30",
 		"updatedAt": "2024-06-30"
 	},
@@ -148,6 +166,7 @@
 		"title": "ハイパーラッシュ | 解析、設定",
 		"description": "ここではハイパーラッシュの機種解析と設定判別などがまとめられています",
 		"path": "slot/hyper-rush/index.md",
+		"published": false,
 		"createdAt": "2024-10-13",
 		"updatedAt": "2024-10-13"
 	},
@@ -155,6 +174,7 @@
 		"slug": "granbelm-settei",
 		"title": "グランベルム | 設定推測",
 		"path": "slot/granbelm-settei/index.md",
+		"published": false,
 		"createdAt": "2024-11-17",
 		"updatedAt": "2024-11-17"
 	},
@@ -163,6 +183,7 @@
 		"title": "グランベルム | 通常時解析",
 		"description": "ここでは「回胴式遊技機グランベルム」の通常時の解析について書かれています",
 		"path": "slot/granbelm-tuujou/index.md",
+		"published": false,
 		"createdAt": "2024-11-17",
 		"updatedAt": "2024-11-17"
 	},
@@ -171,6 +192,7 @@
 		"title": "グランベルム | AT時解析",
 		"description": "ここでは「回胴式遊技機グランベルム」のAT時の解析について書かれています",
 		"path": "slot/granbelm-at/index.md",
+		"published": false,
 		"createdAt": "2024-11-17",
 		"updatedAt": "2024-11-17"
 	}

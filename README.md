@@ -18,7 +18,9 @@ JSON: [data.json](data.json)
     "title": "記事を追加する方法",
     "description": "ここでは記事を追加する方法について書かれています",
     "path": "JUNLE/how-to-add-article/index.md",
-    "createdAt": "2024-10-12"
+    "published": true,
+    "createdAt": "2024-10-12",
+    "updatedAt": "2024-10-12"
 }
 ```
 
@@ -40,7 +42,7 @@ JSON: [data.json](data.json)
 6. [AWSにRuby on Railsをデプロイする方法](tech/deploy-rails-to-aws/index.md)
 7. [Bevyでタイミングゲームを作る](tech/bevy-timing-game/index.md)
 8. [Bevyでテトリスを作る](tech/bevy-tetris/index.md)
-8. [エクセルの使い方](tech/excel-usage/index.md)
+9. [エクセルの使い方](tech/excel-usage/index.md)
 
 ### slot
 
