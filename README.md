@@ -34,15 +34,16 @@ JSON: [data.json](data.json)
 
 ### tech
 
-1. [regexp](tech/regexp/index.md)
-2. [fontawesome-nextjs-big-icon](tech/fontawesome-nextjs-big-icon/index.md)
-3. [ゲームエンジンBevyのセットアップ方法](tech/bevy-setup/index.md)
-4. [【Bevyでゲーム作り】BevyとLDtkで2Dゲームを作る](tech/bevy-ldtk-setup/index.md)
-5. [Rubyの組み込み変数まとめ](tech/ruby-variables/index.md)
-6. [AWSにRuby on Railsをデプロイする方法](tech/deploy-rails-to-aws/index.md)
-7. [Bevyでタイミングゲームを作る](tech/bevy-timing-game/index.md)
-8. [Bevyでテトリスを作る](tech/bevy-tetris/index.md)
-9. [エクセルの使い方](tech/excel-usage/index.md)
+1.  [regexp](tech/regexp/index.md)
+2.  [fontawesome-nextjs-big-icon](tech/fontawesome-nextjs-big-icon/index.md)
+3.  [ゲームエンジンBevyのセットアップ方法](tech/bevy-setup/index.md)
+4.  [【Bevyでゲーム作り】BevyとLDtkで2Dゲームを作る](tech/bevy-ldtk-setup/index.md)
+5.  [Rubyの組み込み変数まとめ](tech/ruby-variables/index.md)
+6.  [AWSにRuby on Railsをデプロイする方法](tech/deploy-rails-to-aws/index.md)
+7.  [Bevyでタイミングゲームを作る](tech/bevy-timing-game/index.md)
+8.  [Bevyでテトリスを作る](tech/bevy-tetris/index.md)
+9.  [エクセルの使い方](tech/excel-usage/index.md)
+10. [Rustで配列内の特定の値のみ処理する方法](tech/rust-iflet/index.md)
 
 ### slot
 

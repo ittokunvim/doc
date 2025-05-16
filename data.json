@@ -81,6 +81,15 @@
 		"updatedAt": "2025-04-23"
 	},
 	{
+		"slug": "rust-iflet",
+		"title": "Rustで配列内の特定の値のみ処理する方法",
+		"description": "ここでは`if let`を使用して配列内の特定の値のみ処理する方法が書かれています",
+		"path": "tech/rust-iflet/index.md",
+		"published": true,
+		"createdAt": "2025-05-16",
+		"updatedAt": "2025-05-16"
+	},
+	{
 		"slug": "fanky-jaggler2",
 		"title": "ファンキージャグラー2 | 設定判別",
 		"description": "ここではファンキージャグラー2の設定推測に役立つ数値についてまとめています",
