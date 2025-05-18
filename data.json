@@ -82,8 +82,8 @@
 	},
 	{
 		"slug": "rust-iflet",
-		"title": "Rustで配列内の特定の値のみ処理する方法",
-		"description": "ここでは`if let`を使用して配列内の特定の値のみ処理する方法が書かれています",
+		"title": "Rustで配列内の特定の値のみ処理する様々な方法",
+		"description": "ここでは様々な方法を駆使して配列内の特定の値を処理する様々な方法が書かれています",
 		"path": "tech/rust-iflet/index.md",
 		"published": true,
 		"createdAt": "2025-05-16",
