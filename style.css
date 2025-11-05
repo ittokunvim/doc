@@ -50,7 +50,7 @@ hr {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 128px;
+	height: 160px;
 	padding: 0.25em;
 	border: 1px solid var(--color-border-primary);
 }
@@ -68,6 +68,17 @@ hr {
 
 #docs .item a:hover {
 	text-decoration: underline;
+}
+
+#docs .item .desc {
+    display: -webkit-box;
+	font-size: 0.75em;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
 }
 
 #docs .item .date {
