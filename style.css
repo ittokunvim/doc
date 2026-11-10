@@ -1,99 +1,104 @@
 :root {
-	--color-text-primary: #333333;
-	--color-text-secondary: #666666;
-	--color-text-link: #1e90ff;
+  --color-text-primary: #333333;
+  --color-text-secondary: #666666;
+  --color-text-link: #1e90ff;
 
-	--color-background-primary: #ffffff;
-	--color-background-secondary: #f5f5f5;
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f5f5f5;
 
-	--color-border-primary: #d8d8d8;
+  --color-border-primary: #d8d8d8;
 }
 
 html {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 body {
-	background-color: var(--color-background-primary);
-	color: var(--color-text-primary);
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 1rem;
+  background-color: var(--color-background-primary);
+  color: var(--color-text-primary);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 h1 {
-	font-size: 2rem;
-	font-weight: bold;
-	text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 hr {
-	margin: 1rem 0;
-	padding: 1rem;
-	border: none;
-	border-bottom: 1px solid var(--color-border-primary);
+  margin: 1rem 0;
+  padding: 1rem;
+  border: none;
+  border-bottom: 1px solid var(--color-border-primary);
 }
 
 #docs h2 {
-	font-size: 1.5rem;
-	text-align: center;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 #docs .list {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(147px, 1fr));
-	gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(147px, 1fr));
+  gap: 1rem;
 }
 
 #docs .item {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 160px;
-	padding: 0.25em;
-	border: 1px solid var(--color-border-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 160px;
+  padding: 0.25em;
+  border: 1px solid var(--color-border-primary);
 }
 
 #docs .item a {
-	display: -webkit-box;
-	font-size: 0.9em;
-	color: var(--color-text-link);
-	text-decoration: none;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 3;
+  display: -webkit-box;
+  font-size: 0.9em;
+  color: var(--color-text-link);
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 #docs .item a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
+}
+
+#docs .item a:focus-visible {
+  outline: 2px solid var(--color-text-link);
+  outline-offset: 2px;
 }
 
 #docs .item .desc {
-    display: -webkit-box;
-	font-size: 0.75em;
-    color: var(--color-text-secondary);
-    text-decoration: none;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+  display: -webkit-box;
+  font-size: 0.75em;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 #docs .item .date {
-	font-size: 0.75em;
-	color: var(--color-text-secondary);
+  font-size: 0.75em;
+  color: var(--color-text-secondary);
 }
 
 #docs .item .date p {
-	margin: 0;
+  margin: 0;
 }
 
 .copyright {
-	font-size: 0.8em;
-	text-align: center;
-	color: var(--color-text-secondary);
-	margin-top: 2rem;
-	border-top: 1px solid var(--color-border-primary);
+  font-size: 0.8em;
+  text-align: center;
+  color: var(--color-text-secondary);
+  margin-top: 2rem;
+  border-top: 1px solid var(--color-border-primary);
 }
