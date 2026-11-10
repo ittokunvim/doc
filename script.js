@@ -43,12 +43,10 @@ async function fetchJson() {
 }
 
 // 日付の文字列を受け取り日本表記の文字列にして出力する
-function formatDate(createdAt) {
-  const date = new Date(createdAt);
-  const year = date.getFullYear();
-  const month = date.getMonth() + 1;
-  const day = date.getDate();
-  return `${year}年${month}月${day}日`;
+function formatDate(dateString) {
+  const [year, month, day] = dateString.split("-");
+
+  return `${year}年${Number(month)}月${Number(day)}日`;
 }
 
 // 書類リストをページに作成する
