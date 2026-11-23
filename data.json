@@ -205,5 +205,14 @@
     "published": false,
     "createdAt": "2024-11-17",
     "updatedAt": "2024-11-17"
+  },
+  {
+    "slug": "fitee",
+    "title": "基本情報技術者試験の勉強メモ",
+    "description": "ここには基本情報技術者試験の合格するために、勉強したことをメモしています",
+    "path": "tech/fitte/index.md",
+    "published": false,
+    "createdAt": "2026-11-23",
+    "updatedAt": "2026-11-23"
   }
 ]
